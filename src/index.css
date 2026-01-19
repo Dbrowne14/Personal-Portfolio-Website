@@ -10,24 +10,57 @@
   h1 {
     @apply text-base font-quicksand tracking-tight text-shadow-slate-900;
   }
+
+  :root {
+    font-family: "Quicksand", sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    width: 100%;
+
+    color-scheme: light dark;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  #root {
+    width: 100%;
+  }
+
+  body {
+    margin: 0;
+    padding: 2rem;
+    color: rgb(218, 170, 170);
+    overflow: auto;
+    background: linear-gradient(
+      315deg,
+      rgb(70, 1, 65) 3%,
+      rgb(14, 44, 75) 38%,
+      rgb(7, 6, 47) 68%,
+      rgb(67, 12, 12) 98%
+    );
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+  }
 }
 
 @layer components {
-
   .nav-link,
   .selected {
-  font-family: "Lexend Deca";
-  min-width: max-content;
-  text-align: center;
+    font-family: "Lexend Deca";
+    min-width: max-content;
+    text-align: center;
   }
 
-   .selected {
+  .selected {
     font-weight: bold;
-    font-size:clamp(1.2rem, 3.5vw, 2rem);
+    font-size: clamp(1.2rem, 3.5vw, 2rem);
     text-decoration: none;
     position: relative;
     padding: clamp(0.25rem, 1vw, 0.5rem);
-    color: rgb(2, 81, 133);
   }
 
   .selected::before,
@@ -43,20 +76,20 @@
   .selected::after {
     top: 0;
     left: 0;
-    border-top: 3px groove rgba(237, 16, 16, 0.4);
-    border-left: 3px groove rgba(237, 16, 16, 0.4);
+    border-top: 3px groove rgba(28, 65, 153);
+    border-left: 3px groove rgba(28, 65, 153);
   }
 
   .selected::before {
     right: 0;
     bottom: 0;
-    border-bottom: 3px solid rgba(237, 16, 16, 0.4);
-    border-right: 3px solid rgba(237, 16, 16, 0.4);
+    border-bottom: 3px solid rgb(28, 65, 153);
+    border-right: 3px solid rgba(28, 65, 153);
   }
-  
+
   .nav-link {
     font-weight: bold;
-    font-size:clamp(1.2rem, 3.5vw, 2rem);
+    font-size: clamp(1.2rem, 3.5vw, 2rem);
     text-decoration: none;
     position: relative;
     padding: clamp(0.25rem, 1vw, 0.5rem);
@@ -94,49 +127,64 @@
     border-color: #e52626;
   }
 
+  .wave {
+    background: rgb(255 255 255 / 25%);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  .wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+  }
+
+  .wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+  }
 }
 
-:root {
-  font-family: "Quicksand", sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  width: 100%;
+@layer utilities {
+  @keyframes gradient {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+  @keyframes wave {
+    2% {
+      transform: translateX(1);
+    }
 
-  color-scheme: light dark;
+    25% {
+      transform: translateX(-25%);
+    }
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+    50% {
+      transform: translateX(-50%);
+    }
 
+    75% {
+      transform: translateX(-25%);
+    }
 
-body {
-  margin: 0;
-  padding: 2rem;
-  color: rgba(25, 25, 25, 0.87);
-  background-color: #fefefe;
-}
-
-#root {
-  width: 100%;
-}
-
-/*button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+    100% {
+      transform: translateX(1);
+    }
+  }
 }

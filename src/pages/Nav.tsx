@@ -8,9 +8,19 @@ const Nav = () => {
         <li>
           <NavLink
             to="/"
-            className={({ isActive }) => (isActive ? "selected" : "nav-link")}
-          >
-            home
+            className={({ isActive }) =>
+              `inline-flex items-center justify-center ${
+                isActive ? "selected" : "nav-link"
+              }`
+            }
+          > 
+            <svg
+              viewBox="0 0 24 24"
+              className="h-[1em] w-[1em] fill-current"
+              aria-hidden="true"
+            >
+              <path d="M12 3l9 8h-3v9a1 1 0 0 1-1 1h-4v-6H11v6H7a1 1 0 0 1-1-1v-9H3z" />
+            </svg>
           </NavLink>
         </li>
         <li>
@@ -26,8 +36,7 @@ const Nav = () => {
             to="/projects"
             className={({ isActive }) => (isActive ? "selected" : "nav-link")}
           >
-            {" "}
-            projects{" "}
+            projects
           </NavLink>
         </li>
         <li>
@@ -35,8 +44,7 @@ const Nav = () => {
             to="/contact"
             className={({ isActive }) => (isActive ? "selected" : "nav-link")}
           >
-            {" "}
-            contact{" "}
+            contact
           </NavLink>
         </li>
       </ul>
