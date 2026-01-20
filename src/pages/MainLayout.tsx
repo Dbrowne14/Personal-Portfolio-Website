@@ -1,8 +1,7 @@
 import React from "react";
 import Nav from "./Nav";
 import { Outlet } from "react-router-dom";
-import MovingBanner from "./MovingBanner";
-
+import MovingBanner from "../components/ui/movingBanner";
 
 const MainLayout = () => {
   return (
