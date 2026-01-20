@@ -5,9 +5,11 @@ import MovingBanner from "../components/ui/movingBanner";
 
 const MainLayout = () => {
   return (
-    <div>
-      <Nav />
-      <Outlet />
+    <div className="w-full">
+      <div className="w-full max-w-3xl mx-auto p-0.5">
+        <Nav />
+        <Outlet />
+      </div>
       <MovingBanner />
     </div>
   );
