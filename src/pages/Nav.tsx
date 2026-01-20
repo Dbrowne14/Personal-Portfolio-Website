@@ -13,7 +13,7 @@ const Nav = () => {
                 isActive ? "selected" : "nav-link"
               }`
             }
-          > 
+          >
             <svg
               viewBox="0 0 24 24"
               className="h-[1em] w-[1em] fill-current"
