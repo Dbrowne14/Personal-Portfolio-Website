@@ -10,7 +10,7 @@
   --color-amberHome: rgb(218, 170, 170);
   --content-width: 800px;
   --color-highlightBlue: rgb(70, 148, 221);
-  --color-highlightRed: rgb(200, 8, 8);
+  --color-highlightRed:  rgb(151, 4, 4);
 }
 
 @layer base {
@@ -31,8 +31,8 @@
     --bg-gradient: linear-gradient(
       315deg,
       rgb(159, 129, 129) 0%,
-      rgb(241, 214, 214) 50%,
-      rgb(237, 236, 215) 100%
+      rgb(207, 181, 181) 50%,
+      rgb(219, 195, 169) 100%
     );
 
     --color-amberHome: oklch(0.145 0 0);
@@ -57,6 +57,10 @@
 }
 
 @layer components {
+  .main-heading{
+    @apply text-4xl text-center text-[clamp(1.5rem,5vw,2.5rem)]
+  }
+
   .nav-link,
   .selected {
     font-family: "Quicksand";
@@ -228,7 +232,7 @@
 
 :root {
   --radius: 0.625rem;
-  --color-amberHome: rgb(108, 76, 6);
+  --color-amberHome: rgb(82, 36, 14);
   --background: oklch(1 0 0);
   --foreground: --color-amberHome;
   --card: oklch(1 0 0);
@@ -252,4 +256,28 @@
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.205 0 0);
   --popover-foreground: oklch(0.985 0 0);
+}
+
+.typewriter-animation {
+  animation: 
+    typewriter 2.5s steps(50) 0.5s 1 normal both, 
+    blinkingCursor 500ms steps(50) infinite normal;
+}
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+@keyframes blinkingCursor{
+  from { border-right-color: rgba(255,255,255,.75); }
+  to { border-right-color: transparent; }
+}
+.cursor {
+    margin: 0 auto;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.cursor {
+  border-right: 1px solid rgba(255,255,255,.75)
 }
