@@ -2,7 +2,7 @@ import React from "react";
 
 const Projects = () => {
   return (
-    <div className="flex flex-col gap-8">
+    <div className="flex flex-col gap-8 overflow-auto">
       <div className="flex flex-col gap-1">
         <h2>GifGallery: Reddits best Gifs all in one place</h2>
         <p>

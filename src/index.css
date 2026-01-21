@@ -8,12 +8,14 @@
   --font-quicksand: "Quicksand";
   --font-lexend: "Lexend Deca";
   --color-amberHome: rgb(218, 170, 170);
-  --content-width: 900px;
+  --content-width: 800px;
+  --color-highlightBlue: rgb(70, 148, 221);
+  --color-highlightRed: rgb(200, 8, 8);
 }
 
 @layer base {
   h1 {
-    @apply text-base font-quicksand tracking-tight text-shadow-slate-900;
+    @apply text-base font-quicksand tracking-tight;
   }
 
   #root {
@@ -44,7 +46,7 @@
   }
 
   body {
-    @apply m-0 p-2 overflow-auto flex justify-center;
+    @apply m-0 p-2 overflow-auto flex justify-center h-screen;
 
     color: var(--color-amberHome);
     background: var(--bg-gradient);
@@ -57,14 +59,14 @@
 @layer components {
   .nav-link,
   .selected {
-    font-family: "Lexend Deca";
+    font-family: "Quicksand";
     min-width: max-content;
     text-align: center;
+    font-size: clamp(1.2em, 2vw, 2rem);
   }
 
   .selected {
     font-weight: bold;
-    font-size: clamp(1.2rem, 3.5vw, 2rem);
     text-decoration: none;
     position: relative;
     padding: clamp(0.25rem, 1vw, 0.5rem);
@@ -83,20 +85,29 @@
   .selected::after {
     top: 0;
     left: 0;
-    border-top: 3px groove rgba(28, 65, 153);
-    border-left: 3px groove rgba(28, 65, 153);
+    border-top: 3px groove var(--color-highlightRed);
+    border-left: 3px groove var(--color-highlightRed);
   }
 
   .selected::before {
     right: 0;
     bottom: 0;
-    border-bottom: 3px solid rgb(28, 65, 153);
-    border-right: 3px solid rgba(28, 65, 153);
+    border-bottom: 3px solid var(--color-highlightRed);
+    border-right: 3px solid var(--color-highlightRed);
   }
+  
+  .dark .selected::before {
+    border-bottom: 3px solid var(--color-highlightBlue);
+    border-right: 3px solid var(--color-highlightBlue);
+  } 
+
+    .dark .selected::after {
+   border-top: 3px groove var(--color-highlightBlue);
+    border-left: 3px groove var(--color-highlightBlue);
+  } 
 
   .nav-link {
     font-weight: bold;
-    font-size: clamp(1.2rem, 3.5vw, 2rem);
     text-decoration: none;
     position: relative;
     padding: clamp(0.25rem, 1vw, 0.5rem);
@@ -131,7 +142,12 @@
   .nav-link:hover::after {
     width: 10px;
     height: 10px;
-    border-color: #e52626;
+    border-color: rgb(200, 8, 8);
+  }
+
+  .dark .nav-link:hover::before,
+  .dark .nav-link:hover::after {
+    border-color: rgba(28, 65, 153); /* Dark mode hover */
   }
 
   .wave {
@@ -214,6 +230,7 @@
 
 :root {
   --radius: 0.625rem;
+  --color-amberHome: rgb(108, 76, 6);
   --background: oklch(1 0 0);
   --foreground: --color-amberHome;
   --card: oklch(1 0 0);
