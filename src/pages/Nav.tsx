@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const Nav = () => {
   return (
     <div className="w-full mt-4 fixed bottom-0 left-1/2 -translate-x-1/2 mx-auto">
-      <ul className="flex flex-row flex-wrap gap-[clamp(1rem,4vw,6rem)] justify-center w-full mb-5 pb-2 text-[clamp(1rem,4vw,2.5rem)]">
+      <ul className="flex flex-row flex-wrap gap-[clamp(1rem,4vw,6rem)] justify-center w-full mb-5 pb-2 text-[clamp(1rem,4vw,1.8rem)]">
         <li>
           <NavLink
             to="/"
