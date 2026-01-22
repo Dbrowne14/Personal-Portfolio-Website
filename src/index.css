@@ -157,7 +157,7 @@
     border-radius: 1000% 1000% 0 0;
     position: fixed;
     width: 200%;
-    height: 12em;
+    height: 12%;
     animation: wave 10s -3s linear infinite;
     transform: translate3d(0, 0, 0);
     opacity: 0.8;
@@ -259,8 +259,7 @@
 }
 
 .typewriter-animation {
-  animation:
-    typewriter 0.8s steps(150) 0.21s 1 normal both;
+  animation: typewriter 0.8s steps(150) 0.21s 1 normal both;
 }
 @keyframes typewriter {
   from {
@@ -303,5 +302,8 @@
     animation:
       typewriter 2.5s steps(50) 0.5s 1 normal both,
       blinkingCursor 500ms steps(50) infinite normal;
+  }
+  .wave {
+    height: 12em;
   }
 }
