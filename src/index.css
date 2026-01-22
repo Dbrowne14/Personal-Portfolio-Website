@@ -8,7 +8,7 @@
   --font-quicksand: "Quicksand";
   --font-lexend: "Lexend Deca";
   --color-amberHome: rgb(218, 170, 170);
-  --content-width: 800px;
+  --standard-width: 1000px;
   --color-highlightBlue: rgb(70, 148, 221);
   --color-highlightRed: rgb(151, 4, 4);
 }
@@ -58,7 +58,11 @@
 
 @layer components {
   .main-heading {
-    @apply text-4xl text-center text-[clamp(1.5rem,5vw,2.5rem)];
+    @apply leading-none text-center text-[clamp(1rem,5vw,2.5rem)];
+  }
+
+  .content-width {
+    @apply  w-(--standard-width) md:max-w-4xl sm:max-w-xl max-w-[80vw] 
   }
 
   .nav-link,

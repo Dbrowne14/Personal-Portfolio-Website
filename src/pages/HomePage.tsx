@@ -1,6 +1,6 @@
 function HomePage() {
   return (
-    <div className="flex flex-col h-full items-center justify-center -translate-y-10 p-4 ">
+    <div className="flex flex-col h-full w-fit justify-self-center items-center justify-center -translate-y-10 p-4 ">
       <h1 className="main-heading">
         Hello I'm {""}
         <span className="text-highlightRed dark:text-highlightBlue bg-[rgba(151,104,90,0.1)] px-2">

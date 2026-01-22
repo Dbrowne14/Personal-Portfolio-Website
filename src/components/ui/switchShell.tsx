@@ -3,7 +3,7 @@ import React from "react";
 
 const switchShell = () => {
   return (
-    <div className="w-fit h-fit sticky rounded-full top-5 dark:bg-[rgba(33,32,32,0.37)] bg-[rgba(228,217,217,0.37)] inline-flex flex-row gap-2 justify-center items-center">
+    <div className="w-fit h-fit sticky rounded-full top-5 dark:bg-[rgba(83,79,79,0.6)] bg-[rgba(228,217,217,0.37)] inline-flex flex-row gap-2 justify-center items-center">
       <svg
         viewBox="0 0 24 24"
         className="h-6 w-6 fill-current text-background"
