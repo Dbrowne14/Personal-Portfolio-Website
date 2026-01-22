@@ -10,7 +10,7 @@
   --color-amberHome: rgb(218, 170, 170);
   --content-width: 800px;
   --color-highlightBlue: rgb(70, 148, 221);
-  --color-highlightRed:  rgb(151, 4, 4);
+  --color-highlightRed: rgb(151, 4, 4);
 }
 
 @layer base {
@@ -57,8 +57,8 @@
 }
 
 @layer components {
-  .main-heading{
-    @apply text-4xl text-center text-[clamp(1.5rem,5vw,2.5rem)]
+  .main-heading {
+    @apply text-4xl text-center text-[clamp(1.5rem,5vw,2.5rem)];
   }
 
   .nav-link,
@@ -98,16 +98,16 @@
     border-bottom: 3px solid var(--color-highlightRed);
     border-right: 3px solid var(--color-highlightRed);
   }
-  
+
   .dark .selected::before {
     border-bottom: 3px solid var(--color-highlightBlue);
     border-right: 3px solid var(--color-highlightBlue);
-  } 
+  }
 
-    .dark .selected::after {
-   border-top: 3px groove var(--color-highlightBlue);
+  .dark .selected::after {
+    border-top: 3px groove var(--color-highlightBlue);
     border-left: 3px groove var(--color-highlightBlue);
-  } 
+  }
 
   .nav-link {
     text-decoration: none;
@@ -259,25 +259,49 @@
 }
 
 .typewriter-animation {
-  animation: 
-    typewriter 2.5s steps(50) 0.5s 1 normal both, 
-    blinkingCursor 500ms steps(50) infinite normal;
+  animation:
+    typewriter 0.8s steps(150) 0.21s 1 normal both;
 }
 @keyframes typewriter {
-  from { width: 0; }
-  to { width: 100%; }
-}
-@keyframes blinkingCursor{
-  from { border-right-color: rgba(255,255,255,.75); }
-  to { border-right-color: transparent; }
-}
-.cursor {
-    margin: 0 auto;
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
 }
 
 .cursor {
-  border-right: 1px solid rgba(255,255,255,.75)
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .cursor {
+    border-right: 1px solid rgba(255, 255, 255, 0.75);
+    white-space: nowrap;
+  }
+  @keyframes blinkingCursor {
+    from {
+      border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    to {
+      border-right-color: transparent;
+    }
+  }
+  @keyframes typewriter {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  .typewriter-animation {
+    animation:
+      typewriter 2.5s steps(50) 0.5s 1 normal both,
+      blinkingCursor 500ms steps(50) infinite normal;
+  }
 }
