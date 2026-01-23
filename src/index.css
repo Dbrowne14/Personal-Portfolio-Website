@@ -30,13 +30,19 @@
 
     --bg-gradient: linear-gradient(
       315deg,
-      rgb(159, 129, 129) 0%,
-      rgb(207, 181, 181) 50%,
-      rgb(219, 195, 169) 100%
+      rgb(252, 249, 249) 0%,
+      rgb(247, 245, 245) 50%,
+      rgb(249, 247, 246) 100%
     );
 
     --color-amberHome: oklch(0.145 0 0);
-
+    --special-border:
+      linear-gradient(#1a1a1a, #1a1a1a),
+      radial-gradient(
+        circle at top left,
+        var(--color-highlightBlue),
+        var(--color-highlightRed)
+      );
     color-scheme: light dark;
 
     font-synthesis: none;
@@ -62,7 +68,7 @@
   }
 
   .content-width {
-    @apply md:max-w-5xl sm:max-w-xl max-w-[80vw] 
+    @apply md:max-w-5xl sm:max-w-xl max-w-[80vw];
   }
 
   .nav-link,
@@ -180,6 +186,10 @@
     bottom: -2.5em;
     animation: wave 20s -1s reverse infinite;
     opacity: 0.9;
+  }
+
+  .logo-card {
+    @apply h-15 w-17 rounded-xl border border-highlightRed bg-[rgba(238,232,232,0.3)] items-center justify-evenly sm:h-25 sm:w-25 md:h-30 md:w-30 overflow-hidden;
   }
 }
 
