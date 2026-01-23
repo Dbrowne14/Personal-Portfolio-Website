@@ -62,7 +62,7 @@
   }
 
   .content-width {
-    @apply  w-(--standard-width) md:max-w-4xl sm:max-w-xl max-w-[80vw] 
+    @apply md:max-w-5xl sm:max-w-xl max-w-[80vw] 
   }
 
   .nav-link,
