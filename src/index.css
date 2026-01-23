@@ -11,6 +11,8 @@
   --standard-width: 1000px;
   --color-highlightBlue: rgb(70, 148, 221);
   --color-highlightRed: rgb(151, 4, 4);
+  --color-standardBg: rgb(252, 249, 249);
+  --color-lightBg: rgba(238, 232, 232, 0.7);
 }
 
 @layer base {
@@ -36,13 +38,6 @@
     );
 
     --color-amberHome: oklch(0.145 0 0);
-    --special-border:
-      linear-gradient(#1a1a1a, #1a1a1a),
-      radial-gradient(
-        circle at top left,
-        var(--color-highlightBlue),
-        var(--color-highlightRed)
-      );
     color-scheme: light dark;
 
     font-synthesis: none;
@@ -163,7 +158,7 @@
   }
 
   .wave {
-    background: rgb(255 255 255 / 25%);
+    background: var(--color-lightBg);
     border-radius: 1000% 1000% 0 0;
     position: fixed;
     width: 200%;
@@ -174,6 +169,10 @@
     bottom: 0;
     left: 0;
     z-index: -1;
+  }
+
+  .dark .wave {
+    background: rgb(255 255 255 / 25%);
   }
 
   .wave:nth-of-type(2) {
@@ -189,7 +188,21 @@
   }
 
   .logo-card {
-    @apply h-15 w-17 rounded-xl border border-highlightRed bg-[rgba(238,232,232,0.3)] items-center justify-evenly sm:h-25 sm:w-25 md:h-30 md:w-30 overflow-hidden;
+    @apply h-15 w-17 rounded-xl bg-lightBg items-center justify-evenly sm:h-25 sm:w-25 md:h-30 md:w-30 overflow-hidden;
+  }
+
+  .special-border {
+    background-image:
+      linear-gradient(var(--color-standardBg), var(--color-standardBg)),
+      radial-gradient(
+        circle at top left,
+        var(--color-highlightBlue),
+        var(--color-highlightRed)
+      );
+    background-clip: content-box, border-box;
+    background-origin: border-box;
+    border-image-slice: 1;
+    border: 0.5px transparent;
   }
 }
 
@@ -318,6 +331,6 @@
       blinkingCursor 500ms steps(50) infinite normal;
   }
   .wave {
-    height: 12em;
+    height: 15vh;
   }
 }

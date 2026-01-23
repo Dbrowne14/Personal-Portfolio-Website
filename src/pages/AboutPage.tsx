@@ -1,33 +1,34 @@
 import myProfileImg from "../assets/My-profile.jpg";
 import LogoShell from "../components/ui/logoShell";
-import reactLogo from "../assets/react.svg"
+import reactLogo from "../assets/react.svg";
+import cssLogo from "../assets/css-3-svgrepo-com.svg";
 
 export default function AboutPage() {
   return (
     <div className="overflow-auto">
       <div className="flex gap-4">
         <div className="flex flex-wrap justify-center gap-4 lg:no-wrap">
-          <div className="flex justify-center items-center shrink-0 relative">
+          <div className="flex justify-center items-center shrink-0 relative ">
             <img
               src={myProfileImg}
-              className="rounded-full w-[clamp(220px,30vw,300px)] text- h-[clamp(220px,30vw,300px)] object-cover object-[50%_20%] border-2 border-highlightRed dark:border-amberHome/50"
+              className="rounded-full w-[clamp(220px,30vw,300px)] text- h-[clamp(220px,30vw,300px)] object-cover object-[50%_20%] border-3 special-border"
             />
           </div>
           <div className="flex lg:flex-1 flex-wrap justify-center gap-2 items-center font-medium">
-            <LogoShell name="JavaScript" imgUrl=""/>
-            <LogoShell name="TypeScript" imgUrl=""/>
-            <LogoShell name="React" imgUrl={reactLogo}/>
-            <LogoShell name="Node.js" imgUrl=""/>
-            <LogoShell name="Express.js" imgUrl=""/>
-            <LogoShell name="Redux" imgUrl=""/>
-            <LogoShell name="Tailwind CSS" imgUrl=""/>
-            <LogoShell name="Git" imgUrl=""/>
-            <LogoShell name="CSS" imgUrl=""/>
-            <LogoShell name="HTML" imgUrl=""/>
+            <LogoShell name="JavaScript" imgUrl="" />
+            <LogoShell name="TypeScript" imgUrl="" />
+            <LogoShell name="React" imgUrl={reactLogo} />
+            <LogoShell name="Node.js" imgUrl="" />
+            <LogoShell name="Express.js" imgUrl="" />
+            <LogoShell name="Redux" imgUrl="" />
+            <LogoShell name="Tailwind CSS" imgUrl="" />
+            <LogoShell name="Git" imgUrl="" />
+            <LogoShell name="CSS" imgUrl={cssLogo} />
+            <LogoShell name="HTML" imgUrl="" />
           </div>
         </div>
       </div>
-      <div className="w-auto mt-4 lock font-medium self-center-safe text-[clamp(0.8rem,4vw,1.3rem)]">
+      <div className="w-auto mt-10 lock font-medium self-center-safe text-[clamp(0.8rem,4vw,1.3rem)]">
         {" "}
         I’m a Full Stack Developer on a journey of life-long learning, with a
         passion for JavaScript and all things React. I arrived here after a
