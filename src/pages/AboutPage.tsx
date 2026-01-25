@@ -2,6 +2,14 @@ import myProfileImg from "../assets/My-profile.jpg";
 import LogoShell from "../components/ui/logoShell";
 import reactLogo from "../assets/react.svg";
 import cssLogo from "../assets/css-3-svgrepo-com.svg";
+import JavaScriptLogo from "../assets/128px-Unofficial_JavaScript_logo_2.svg.png";
+import typeScriptLogo from "../assets/128px-Typescript_logo_2020.svg.png";
+import nodeLogo from "../assets/nodejs-icon-svgrepo-com.svg";
+import expressLogo from "../assets/icon-expressjs.svg";
+import reduxLogo from "../assets/redux-logo-svgrepo-com.svg";
+import tailwindLogo from "../assets/128px-Tailwind_CSS_Logo.svg.png";
+import gitLogo from "../assets/git-icon-logo-svgrepo-com.svg";
+import htmlLogo from "../assets/128px-HTML5_logo_and_wordmark.svg.png"
 
 export default function AboutPage() {
   return (
@@ -15,16 +23,16 @@ export default function AboutPage() {
             />
           </div>
           <div className="flex lg:flex-1 flex-wrap justify-center gap-2 items-center font-medium">
-            <LogoShell name="JavaScript" imgUrl="" />
-            <LogoShell name="TypeScript" imgUrl="" />
+            <LogoShell name="JavaScript" imgUrl={JavaScriptLogo} />
+            <LogoShell name="TypeScript" imgUrl={typeScriptLogo} />
             <LogoShell name="React" imgUrl={reactLogo} />
-            <LogoShell name="Node.js" imgUrl="" />
-            <LogoShell name="Express.js" imgUrl="" />
-            <LogoShell name="Redux" imgUrl="" />
-            <LogoShell name="Tailwind CSS" imgUrl="" />
-            <LogoShell name="Git" imgUrl="" />
+            <LogoShell name="Node.js" imgUrl={nodeLogo} />
+            <LogoShell name="Express.js" imgUrl={expressLogo} />
+            <LogoShell name="Redux" imgUrl={reduxLogo} />
+            <LogoShell name="Tailwind CSS" imgUrl={tailwindLogo} />
+            <LogoShell name="Git" imgUrl={gitLogo} />
             <LogoShell name="CSS" imgUrl={cssLogo} />
-            <LogoShell name="HTML" imgUrl="" />
+            <LogoShell name="HTML" imgUrl={htmlLogo} />
           </div>
         </div>
       </div>
