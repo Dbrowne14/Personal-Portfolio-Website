@@ -7,7 +7,7 @@ import SwitchShell from "../components/ui/switchShell";
 const MainLayout = () => {
   return (
     <div className="w-full h-full">
-      <div className="content-width mx-auto p-0.5 h-full grid grid-rows-[1fr_10fr_1.5fr]">
+      <div className="content-width mx-auto p-0.5 h-full grid grid-rows-[minmax(0,1fr)_minmax(0,10fr)_minmax(0,1.5fr)]">
         <SwitchShell />
         <Outlet />
         <Nav />
