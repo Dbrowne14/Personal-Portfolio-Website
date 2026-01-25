@@ -56,4 +56,4 @@ export default function AboutPage() {
 
 //after:block after:border-b after:border-amberHome/20 after:w-5/6 after:mx-auto after:mt-6
 
-//BIG TASK IS TO CHANGE THE LAYOUT TO FLEX FROM GRID. GRID Good but not very responsive when nested.
+//Morning task is adding in texts size changes
