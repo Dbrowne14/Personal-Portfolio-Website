@@ -16,10 +16,10 @@ export default function AboutPage() {
     <div>
       <div className="flex gap-4">
         <div className="flex flex-wrap justify-center gap-4 lg:no-wrap">
-          <div className="flex justify-center items-center shrink-0 relative ">
+          <div className="flex justify-center items-center shrink-0 relative rounded-full special-border">
             <img
               src={myProfileImg}
-              className="rounded-full w-[clamp(220px,30vw,300px)] text- h-[clamp(220px,30vw,300px)] object-cover object-[50%_20%] border-3 special-border"
+              className="rounded-full w-[clamp(220px,30vw,300px)] h-[clamp(220px,30vw,300px)] object-cover object-[50%_20%]"
             />
           </div>
           <div className="flex lg:flex-1 flex-wrap justify-center gap-2 items-center font-medium">
@@ -60,4 +60,4 @@ export default function AboutPage() {
 
 //after:block after:border-b after:border-amberHome/20 after:w-5/6 after:mx-auto after:mt-6
 
-//Morning task is adding in texts size changes
+

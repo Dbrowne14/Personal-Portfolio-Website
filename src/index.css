@@ -13,6 +13,7 @@
   --color-highlightRed: rgb(151, 4, 4);
   --color-standardBg: rgb(252, 249, 249);
   --color-lightBg: rgba(238, 232, 232, 0.7);
+  --color-iconBg: rgba(1,1,1,0.13)
 }
 
 @layer base {
@@ -187,13 +188,76 @@
     opacity: 0.9;
   }
 
+  .typewriter-animation {
+    animation: typewriter 0.8s steps(150) 0.21s 1 normal both;
+  }
+  @keyframes typewriter {
+    from {
+      transform: scaleX(0);
+    }
+    to {
+      transform: scaleX(1);
+    }
+  }
+
+  .cursor {
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+    max-width: 100%;
+  }
+
+  @media (min-width: 768px) {
+    .cursor {
+      border-right: 1px solid rgba(255, 255, 255, 0.75);
+      white-space: nowrap;
+    }
+    @keyframes blinkingCursor {
+      from {
+        border-right-color: rgba(255, 255, 255, 0.75);
+      }
+      to {
+        border-right-color: transparent;
+      }
+    }
+    @keyframes typewriter {
+      from {
+        width: 0%;
+      }
+      to {
+        width: 100%;
+      }
+    }
+    .typewriter-animation {
+      animation:
+        typewriter 2.5s steps(50) 0.5s 1 normal both,
+        blinkingCursor 500ms steps(50) infinite normal;
+    }
+    .wave {
+      height: 15vh;
+    }
+  }
+
   .logo-card {
     @apply h-15 w-17 rounded-xl bg-lightBg items-center justify-evenly sm:h-25 sm:w-25 lg:h-30 md:w-30 overflow-hidden;
   }
 
   .special-border {
+    @apply bg-lightBg p-1;
+  }
+
+  .dark .special-border {
+    @apply bg-iconBg
+  }
+
+
+  :hover.special-border {
+    @apply bg-[rgba(227,205,205,0.9)] p-1;
+  }
+
+  .dark .special-border:hover {
     background-image:
-      linear-gradient(var(--color-standardBg), var(--color-standardBg)),
+      linear-gradient(var(--color-highlightBlue), var(--color-highlightRed)),
       radial-gradient(
         circle at top left,
         var(--color-highlightBlue),
@@ -202,7 +266,6 @@
     background-clip: content-box, border-box;
     background-origin: border-box;
     border-image-slice: 1;
-    border: 0.5px transparent;
   }
 }
 
@@ -251,10 +314,6 @@
   --radius-4xl: calc(var(--radius) + 16px);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-card: var(--card);
-  --color-card-foreground: var(--card-foreground);
-  --color-popover: var(--popover);
-  --color-popover-foreground: var(--popover-foreground);
 }
 
 :root {
@@ -262,10 +321,6 @@
   --color-amberHome: rgb(82, 36, 14);
   --background: oklch(1 0 0);
   --foreground: --color-amberHome;
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
 }
 
 .dark {
@@ -279,58 +334,4 @@
   --color-amberHome: rgb(218, 170, 170);
   --background: oklch(0.145 0 0);
   --foreground: rgb(218, 170, 170);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-}
-
-.typewriter-animation {
-  animation: typewriter 0.8s steps(150) 0.21s 1 normal both;
-}
-@keyframes typewriter {
-  from {
-    transform: scaleX(0);
-  }
-  to {
-    transform: scaleX(1);
-  }
-}
-
-.cursor {
-  margin: 0 auto;
-  text-align: center;
-  overflow: hidden;
-  max-width: 100%;
-}
-
-@media (min-width: 768px) {
-  .cursor {
-    border-right: 1px solid rgba(255, 255, 255, 0.75);
-    white-space: nowrap;
-  }
-  @keyframes blinkingCursor {
-    from {
-      border-right-color: rgba(255, 255, 255, 0.75);
-    }
-    to {
-      border-right-color: transparent;
-    }
-  }
-  @keyframes typewriter {
-    from {
-      width: 0%;
-    }
-    to {
-      width: 100%;
-    }
-  }
-  .typewriter-animation {
-    animation:
-      typewriter 2.5s steps(50) 0.5s 1 normal both,
-      blinkingCursor 500ms steps(50) infinite normal;
-  }
-  .wave {
-    height: 15vh;
-  }
 }
