@@ -16,11 +16,18 @@ export default function AboutPage() {
     <div>
       <div className="flex gap-4">
         <div className="flex flex-wrap justify-center gap-4 lg:no-wrap">
-          <div className="flex justify-center items-center shrink-0 relative rounded-full special-border">
-            <img
-              src={myProfileImg}
-              className="rounded-full w-[clamp(220px,30vw,300px)] h-[clamp(220px,30vw,300px)] object-cover object-[50%_20%]"
-            />
+          <div className="flex flex-col gap-8">
+            <div className="flex justify-center items-center shrink-0 relative rounded-full special-border">
+              <img
+                src={myProfileImg}
+                className="rounded-full w-[clamp(220px,30vw,300px)] h-[clamp(220px,30vw,300px)] object-cover object-[50%_20%]"
+              />
+            </div>
+            <div className="flex flex-row justify-around w-full">
+              <button className="w-[28%] h-10 bg-black rounded-full"></button>
+              <button className="w-[28%] h-10 bg-black rounded-full"></button>
+              <button className="w-[28%] h-10 bg-black rounded-full"></button>
+            </div>
           </div>
           <div className="flex lg:flex-1 flex-wrap justify-center gap-2 items-center font-medium">
             <LogoShell name="JavaScript" imgUrl={JavaScriptLogo} />
