@@ -9,7 +9,9 @@ const MainLayout = () => {
     <div className="w-full h-full">
       <div className="content-width mx-auto p-0.5 h-full grid grid-rows-[minmax(0,1fr)_minmax(0,10fr)_minmax(0,1.5fr)]">
         <SwitchShell />
-        <Outlet />
+        <main className="pt-6 overflow-y-auto">
+          <Outlet />
+        </main>
         <Nav />
       </div>
       <MovingBanner />

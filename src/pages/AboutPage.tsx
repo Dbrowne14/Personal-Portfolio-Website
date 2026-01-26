@@ -9,11 +9,11 @@ import expressLogo from "../assets/icon-expressjs.svg";
 import reduxLogo from "../assets/redux-logo-svgrepo-com.svg";
 import tailwindLogo from "../assets/128px-Tailwind_CSS_Logo.svg.png";
 import gitLogo from "../assets/git-icon-logo-svgrepo-com.svg";
-import htmlLogo from "../assets/128px-HTML5_logo_and_wordmark.svg.png"
+import htmlLogo from "../assets/128px-HTML5_logo_and_wordmark.svg.png";
 
 export default function AboutPage() {
   return (
-    <div className="overflow-auto">
+    <div>
       <div className="flex gap-4">
         <div className="flex flex-wrap justify-center gap-4 lg:no-wrap">
           <div className="flex justify-center items-center shrink-0 relative ">
@@ -36,19 +36,23 @@ export default function AboutPage() {
           </div>
         </div>
       </div>
-      <div className="w-auto mt-10 lock font-medium self-center-safe text-[clamp(0.8rem,4vw,1.3rem)]">
+      <div className="w-auto mt-10 mb-15 lg:text-[1.4rem] lg:mt-30 lg:w-full md:w-[90%] font-medium self-center-safe text-[clamp(0.8rem,4vw,1.3rem)] mx-auto space-y-5">
         {" "}
-        I’m a Full Stack Developer on a journey of life-long learning, with a
-        passion for JavaScript and all things React. I arrived here after a
-        decade in investment banking, spending my time wearing a suit and
-        advising on large fintech investments. The exposure to the companies and
-        people I was interacting with sparked a curiosity that I couldn’t ignore
-        — I wanted to understand how the products I was investing in were
-        actually built. Coding became a way to combine my love of
-        problem-solving with a hands-on connection to the tech market I had been
-        immersed in for years. I’m driven by a constant quest to learn, explore
-        new tools, and build things that are not just functional, but
-        meaningful.
+        <p>
+          I’m a Full Stack Developer on a journey of life-long learning, with a
+          passion for JavaScript and all things React. I arrived here after a
+          decade in investment banking, spending my time in stuffy boardrooms
+          wearing a suit and advising on large fintech investments. Here I got
+          to meet the companies and people building growing tech products and
+          services businesses, but this wasn't enough — I wanted to understand
+          how the products I was investing in were actually built.{" "}
+        </p>{" "}
+        <p>
+          Coding has become my outlet, a way to combine my love of problem-solving with a
+          hands-on connection to the tech market I had been immersed in for
+          years. I’m driven by a constant quest to learn, explore new tools, and
+          build things that are not just functional, but meaningful.
+        </p>
       </div>
     </div>
   );

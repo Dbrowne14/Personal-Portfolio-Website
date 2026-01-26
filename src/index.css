@@ -63,7 +63,7 @@
   }
 
   .content-width {
-    @apply md:max-w-5xl sm:max-w-xl max-w-[80vw];
+    @apply lg:max-w-5xl md:max-w-4xl sm:max-w-xl max-w-[80vw];
   }
 
   .nav-link,
@@ -188,7 +188,7 @@
   }
 
   .logo-card {
-    @apply h-15 w-17 rounded-xl bg-lightBg items-center justify-evenly sm:h-25 sm:w-25 md:h-30 md:w-30 overflow-hidden;
+    @apply h-15 w-17 rounded-xl bg-lightBg items-center justify-evenly sm:h-25 sm:w-25 lg:h-30 md:w-30 overflow-hidden;
   }
 
   .special-border {
