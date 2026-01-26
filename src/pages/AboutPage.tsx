@@ -10,13 +10,14 @@ import reduxLogo from "../assets/redux-logo-svgrepo-com.svg";
 import tailwindLogo from "../assets/128px-Tailwind_CSS_Logo.svg.png";
 import gitLogo from "../assets/git-icon-logo-svgrepo-com.svg";
 import htmlLogo from "../assets/128px-HTML5_logo_and_wordmark.svg.png";
+import Button from "../components/ui/button";
 
 export default function AboutPage() {
   return (
     <div>
       <div className="flex gap-4">
         <div className="flex flex-wrap justify-center gap-4 lg:no-wrap">
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-3 sm:gap-5 md:gap-8">
             <div className="flex justify-center items-center shrink-0 relative rounded-full special-border">
               <img
                 src={myProfileImg}
@@ -24,9 +25,9 @@ export default function AboutPage() {
               />
             </div>
             <div className="flex flex-row justify-around w-full">
-              <button className="w-[28%] h-10 bg-black rounded-full"></button>
-              <button className="w-[28%] h-10 bg-black rounded-full"></button>
-              <button className="w-[28%] h-10 bg-black rounded-full"></button>
+              <Button name="LinkedIn" />
+              <Button name="Resume" />
+              <Button name="GitHub" />
             </div>
           </div>
           <div className="flex lg:flex-1 flex-wrap justify-center gap-2 items-center font-medium">
@@ -55,10 +56,11 @@ export default function AboutPage() {
           how the products I was investing in were actually built.{" "}
         </p>{" "}
         <p>
-          Coding has become my outlet, a way to combine my love of problem-solving with a
-          hands-on connection to the tech market I had been immersed in for
-          years. I’m driven by a constant quest to learn, explore new tools, and
-          build things that are not just functional, but meaningful.
+          Coding has become my outlet, a way to combine my love of
+          problem-solving with a hands-on connection to the tech market I had
+          been immersed in for years. I’m driven by a constant quest to learn,
+          explore new tools, and build things that are not just functional, but
+          meaningful.
         </p>
       </div>
     </div>
@@ -66,5 +68,3 @@ export default function AboutPage() {
 }
 
 //after:block after:border-b after:border-amberHome/20 after:w-5/6 after:mx-auto after:mt-6
-
-

@@ -7,7 +7,7 @@ type MyComponentProps = {
 
 const logoShell = ({ name, imgUrl }: MyComponentProps) => {
   return (
-    <div className="flex flex-col logo-card p-1 dark:bg-iconBg dark:text-[rgb(237,238,245)]  hover:border-4 dark:hover:border-iconBg hover:border-standardBg">
+    <div className="flex flex-col logo-card p-1 dark:bg-iconBg dark:text-iconText  hover:border-4 dark:hover:border-iconBg hover:border-standardBg">
       <div className="h-[75%] flex justify-center items-center">
         <img src={imgUrl} className="justify-self-center h-[85%] w-[90%]" />
       </div>

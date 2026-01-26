@@ -13,7 +13,8 @@
   --color-highlightRed: rgb(151, 4, 4);
   --color-standardBg: rgb(252, 249, 249);
   --color-lightBg: rgba(238, 232, 232, 0.7);
-  --color-iconBg: rgba(1,1,1,0.13)
+  --color-iconBg: rgba(1,1,1,0.13);
+  --color-iconText: rgb(237,238,245);
 }
 
 @layer base {
@@ -243,7 +244,7 @@
   }
 
   .special-border {
-    @apply bg-lightBg p-1;
+    @apply bg-lightBg p-px;
   }
 
   .dark .special-border {
@@ -252,7 +253,7 @@
 
 
   :hover.special-border {
-    @apply bg-[rgba(227,205,205,0.9)] p-1;
+    @apply bg-[rgba(227,205,205,0.9)];
   }
 
   .dark .special-border:hover {
