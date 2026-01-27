@@ -15,8 +15,8 @@ import Button from "../components/ui/button";
 export default function AboutPage() {
   return (
     <div>
-      <div className="flex gap-4">
-        <div className="flex flex-wrap justify-center gap-4 lg:no-wrap">
+      <div>
+        <div className="flex flex-wrap justify-center gap-10 lg:no-wrap">
           <div className="flex flex-col gap-3 sm:gap-5 md:gap-8">
             <div className="flex justify-center items-center shrink-0 relative rounded-full special-border">
               <img
@@ -30,38 +30,57 @@ export default function AboutPage() {
               <Button name="GitHub" />
             </div>
           </div>
-          <div className="flex lg:flex-1 flex-wrap justify-center gap-2 items-center font-medium">
-            <LogoShell name="JavaScript" imgUrl={JavaScriptLogo} />
-            <LogoShell name="TypeScript" imgUrl={typeScriptLogo} />
-            <LogoShell name="React" imgUrl={reactLogo} />
-            <LogoShell name="Node.js" imgUrl={nodeLogo} />
-            <LogoShell name="Express.js" imgUrl={expressLogo} />
-            <LogoShell name="Redux" imgUrl={reduxLogo} />
-            <LogoShell name="Tailwind CSS" imgUrl={tailwindLogo} />
-            <LogoShell name="Git" imgUrl={gitLogo} />
-            <LogoShell name="CSS" imgUrl={cssLogo} />
-            <LogoShell name="HTML" imgUrl={htmlLogo} />
+          <div className="flex flex-col gap-4">
+            <div className="w-full place-items-center">
+              <h1
+                className="font-bold text-[clamp(1.4rem,2vw,2rem)]
+             w-fit"
+              >
+                About Me.
+              </h1>
+            </div>
+            <div className="w-auto lg:text-[1.4rem] lg:w-full md:w-[90%] font-medium self-center-safe text-[clamp(0.6rem,2.5vw,1.3rem)] mx-auto space-y-5">
+              <p>
+                I’m a Full Stack Developer on a journey of life-long learning,
+                with a passion for JavaScript and all things React. I arrived
+                here after a decade in investment banking, spending my time in
+                stuffy boardrooms wearing a suit and advising on large fintech
+                investments. Here I got to meet the companies and people
+                building growing tech products and services businesses, but this
+                wasn't enough — I wanted to understand how the products I was
+                investing in were actually built.</p>
+              <p>
+                Coding has become my outlet, a way to combine my love of
+                problem-solving with a hands-on connection to the tech market I
+                had been immersed in for years. I’m driven by a constant quest
+                to learn, explore new tools, and build things that are not just
+                functional, but meaningful.
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-wrap gap-4 rounded-2xl pb-2 mb-4">
+            <div className="w-full place-items-center">
+              <h1
+                className="font-bold text-[clamp(1.4rem,2vw,2rem)]
+             w-fit "
+              >
+                Technologies.
+              </h1>
+            </div>
+            <div className="flex lg:flex-1 flex-wrap justify-center gap-2 items-center font-medium">
+              <LogoShell name="JavaScript" imgUrl={JavaScriptLogo} />
+              <LogoShell name="TypeScript" imgUrl={typeScriptLogo} />
+              <LogoShell name="React" imgUrl={reactLogo} />
+              <LogoShell name="Node.js" imgUrl={nodeLogo} />
+              <LogoShell name="Express.js" imgUrl={expressLogo} />
+              <LogoShell name="Redux" imgUrl={reduxLogo} />
+              <LogoShell name="Tailwind CSS" imgUrl={tailwindLogo} />
+              <LogoShell name="Git" imgUrl={gitLogo} />
+              <LogoShell name="CSS" imgUrl={cssLogo} />
+              <LogoShell name="HTML" imgUrl={htmlLogo} />
+            </div>
           </div>
         </div>
-      </div>
-      <div className="w-auto mt-10 mb-15 lg:text-[1.4rem] lg:mt-30 lg:w-full md:w-[90%] font-medium self-center-safe text-[clamp(0.8rem,4vw,1.3rem)] mx-auto space-y-5">
-        {" "}
-        <p>
-          I’m a Full Stack Developer on a journey of life-long learning, with a
-          passion for JavaScript and all things React. I arrived here after a
-          decade in investment banking, spending my time in stuffy boardrooms
-          wearing a suit and advising on large fintech investments. Here I got
-          to meet the companies and people building growing tech products and
-          services businesses, but this wasn't enough — I wanted to understand
-          how the products I was investing in were actually built.{" "}
-        </p>{" "}
-        <p>
-          Coding has become my outlet, a way to combine my love of
-          problem-solving with a hands-on connection to the tech market I had
-          been immersed in for years. I’m driven by a constant quest to learn,
-          explore new tools, and build things that are not just functional, but
-          meaningful.
-        </p>
       </div>
     </div>
   );
