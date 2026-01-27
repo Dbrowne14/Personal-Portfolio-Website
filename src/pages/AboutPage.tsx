@@ -1,15 +1,15 @@
 import myProfileImg from "../assets/My-profile.jpg";
 import LogoShell from "../components/ui/logoShell";
-import reactLogo from "../assets/react.svg";
-import cssLogo from "../assets/css-3-svgrepo-com.svg";
-import JavaScriptLogo from "../assets/128px-Unofficial_JavaScript_logo_2.svg.png";
-import typeScriptLogo from "../assets/128px-Typescript_logo_2020.svg.png";
-import nodeLogo from "../assets/nodejs-icon-svgrepo-com.svg";
-import expressLogo from "../assets/icon-expressjs.svg";
-import reduxLogo from "../assets/redux-logo-svgrepo-com.svg";
-import tailwindLogo from "../assets/128px-Tailwind_CSS_Logo.svg.png";
-import gitLogo from "../assets/git-icon-logo-svgrepo-com.svg";
-import htmlLogo from "../assets/128px-HTML5_logo_and_wordmark.svg.png";
+import reactLogo from "../assets/logos/react.svg";
+import cssLogo from "../assets/logos/css-3-svgrepo-com.svg";
+import JavaScriptLogo from "../assets/logos/128px-Unofficial_JavaScript_logo_2.svg.png";
+import typeScriptLogo from "../assets/logos/128px-Typescript_logo_2020.svg.png";
+import nodeLogo from "../assets/logos/nodejs-icon-svgrepo-com.svg";
+import expressLogo from "../assets/logos/icon-expressjs.svg";
+import reduxLogo from "../assets/logos/redux-logo-svgrepo-com.svg";
+import tailwindLogo from "../assets/logos/128px-Tailwind_CSS_Logo.svg.png";
+import gitLogo from "../assets/logos/git-icon-logo-svgrepo-com.svg";
+import htmlLogo from "../assets/logos/128px-HTML5_logo_and_wordmark.svg.png";
 import Button from "../components/ui/button";
 
 export default function AboutPage() {
