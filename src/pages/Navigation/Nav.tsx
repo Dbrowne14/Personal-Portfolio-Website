@@ -1,8 +1,7 @@
 import React from "react";
 import NavLargeScreens from "./NavLargeScreens";
 import NavSmallScreen from "./NavSmallScreen";
-import CloseTag from "../../assets/icons/close-x-svgrepo-com.svg";
-import OpenTag from "../../assets/icons/hamburger-menu-svgrepo-com.svg";
+import OpenClose from "../../components/ui/open_Close";
 import SwitchShell from "../../components/ui/switchShell";
 import { useState } from "react";
 
@@ -12,13 +11,9 @@ const Nav = () => {
     <div className="content-width flex flex-row justify-between">
       <SwitchShell />
       <NavLargeScreens />
-      <div className="flex flex-1 justify-end place-items-center sm:hidden">
+      <div className="flex flex-1 justify-end items-center sm:hidden">
         {" "}
-        <img
-          src={toggle ? CloseTag : OpenTag}
-          className="w-4 h-4 relative"
-          onClick={() => setToggle((prev) => !prev)}
-        />
+          <OpenClose toggle={toggle} setToggle={setToggle}/>
         <NavSmallScreen toggle={toggle} />
       </div>
     </div>
@@ -28,4 +23,4 @@ const Nav = () => {
 export default Nav;
 
 //<NavLargeScreens/>
-//      <img src={CloseTag} className="w-4 h-4"/>
+// vbackground: white; display: block; height: 2px; width: 18px; border-radius: 2px; position: absolute; transition: 0.2s ease-out; top: 50%; transform: rotate(-45deg);/>

@@ -9,8 +9,8 @@ type Toggle = {
 
 const NavSmallScreen = ({toggle} : Toggle) => {
   return (
-    <div className={`bg-[#efdfd2] absolute ${toggle ? "flex" : "hidden"} justify-center z-50 items-center right-0 top-15 rounded-2xl w-[clamp(6rem,15vw,15rem)] p-4`}>
-      <ul className="flex flex-col gap-[clamp(1rem,1vw,3rem)] justify-around text-[clamp(0.8rem,2.3vw,1.6rem)]">
+    <div className={`bg-white text-highlightColor font-bold absolute shadow-2xl flex ${toggle ? "max-h-96 opacity-100" : "max-h-0 opacity-0"} ease-in-out overflow-hidden transition-[max-height,opacity] duration-600 justify-center z-50 items-center right-0 top-15 rounded-2xl w-[clamp(6rem,15vw,15rem)] p-4`}>
+      <ul className="flex flex-col gap-[clamp(1rem,1vw,3rem)] justify-around text-[clamp(0.8rem,2vw,1.6rem)]">
         <li>
           <NavLink
             to="/"
