@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 
 const NavLargeScreens = () => {
   return (
-    <div className="ml-auto">
+    <div className="ml-auto hidden sm:flex">
       <ul className="flex flex-row flex-wrap min-w-full gap-[clamp(1rem,1vw,3rem)] justify-around text-[clamp(0.8rem,3vw,1.3rem)]">
         <li>
           <NavLink

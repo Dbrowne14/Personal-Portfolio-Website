@@ -7,11 +7,11 @@ import SwitchShell from "../components/ui/switchShell";
 const MainLayout = () => {
   return (
     <div className="w-full h-full">
-      <div className="content-width mx-auto p-0.5 h-full grid grid-rows-[minmax(0,1fr)_minmax(0,10fr)_minmax(0,1.5fr)]">
-        <nav className="flex place-items-center fixed top-2">
+      <div className="content-width mx-auto p-0.5 h-full grid grid-rows-[minmax(0,1fr)_minmax(0,10fr)]">
+        <nav className="flex place-items-center sticky top-2 z-50 items-center">
           <Nav />
         </nav>
-        <main className="pt-6 w-full">
+        <main className="pt-6 sm:pt-15 w-full h-full">
           <Outlet />
         </main>
       </div>
