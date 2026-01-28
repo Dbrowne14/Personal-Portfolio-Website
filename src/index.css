@@ -9,6 +9,7 @@
   --font-lexend: "Lexend Deca";
   --color-amberHome: rgb(218, 170, 170);
   --standard-width: 1000px;
+  --color-highlightColor: rgb(151, 4, 4);
   --color-highlightBlue: rgb(70, 148, 221);
   --color-highlightRed: rgb(151, 4, 4);
   --color-standardBg: rgb(252, 249, 249);
@@ -99,26 +100,17 @@
   .selected::after {
     top: 0;
     left: 0;
-    border-top: 3px groove var(--color-highlightRed);
-    border-left: 3px groove var(--color-highlightRed);
+    border-top: 3px groove var(--color-highlightColor);
+    border-left: 3px groove var(--color-highlightColor);
   }
 
   .selected::before {
     right: 0;
     bottom: 0;
-    border-bottom: 3px solid var(--color-highlightRed);
-    border-right: 3px solid var(--color-highlightRed);
+    border-bottom: 3px solid var(--color-highlightColor);
+    border-right: 3px solid var(--color-highlightColor);
   }
 
-  .dark .selected::before {
-    border-bottom: 3px solid var(--color-highlightBlue);
-    border-right: 3px solid var(--color-highlightBlue);
-  }
-
-  .dark .selected::after {
-    border-top: 3px groove var(--color-highlightBlue);
-    border-left: 3px groove var(--color-highlightBlue);
-  }
 
   .nav-link {
     text-decoration: none;
@@ -155,12 +147,7 @@
   .nav-link:hover::after {
     width: 10px;
     height: 10px;
-    border-color: rgb(200, 8, 8);
-  }
-
-  .dark .nav-link:hover::before,
-  .dark .nav-link:hover::after {
-    border-color: rgba(28, 65, 153); /* Dark mode hover */
+    border-color: var(--color-highlightColor);
   }
 
   .wave {
@@ -338,6 +325,7 @@
   --color-amberHome: rgb(218, 170, 170);
   --background: oklch(0.145 0 0);
   --foreground: rgb(218, 170, 170);
+  --color-highlightColor: rgb(70, 148, 221);
 }
 
 /*::-webkit-scrollbar {
