@@ -70,7 +70,7 @@
   }
 
   .content-width {
-    @apply lg:max-w-5xl md:max-w-4xl sm:max-w-xl max-w-[80vw];
+    @apply lg:max-w-5xl md:max-w-4xl sm:max-w-xl max-w-[80vw] w-[80vw];
   }
 
   .nav-link,

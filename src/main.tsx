@@ -2,11 +2,11 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
-import HomePage from "./pages/HomePage";
-import AboutPage from "./pages/AboutPage";
+import HomePage from "./pages/Outlet/HomePage";
+import AboutPage from "./pages/Outlet/AboutPage";
 import NotFoundPage from "./pages/NotFoundPage";
-import Contact from "./pages/Contact";
-import Projects from "./pages/Projects";
+import Contact from "./pages/Outlet/Contact";
+import Projects from "./pages/Outlet/Projects";
 import MainLayout from "./pages/MainLayout";
 
 const router = createBrowserRouter([
@@ -38,5 +38,5 @@ const router = createBrowserRouter([
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <RouterProvider router={router} />
-  </StrictMode>
+  </StrictMode>,
 );

@@ -1,16 +1,16 @@
-import myProfileImg from "../assets/My-profile.jpg";
-import LogoShell from "../components/ui/logoShell";
-import reactLogo from "../assets/logos/react.svg";
-import cssLogo from "../assets/logos/css-3-svgrepo-com.svg";
-import JavaScriptLogo from "../assets/logos/128px-Unofficial_JavaScript_logo_2.svg.png";
-import typeScriptLogo from "../assets/logos/128px-Typescript_logo_2020.svg.png";
-import nodeLogo from "../assets/logos/nodejs-icon-svgrepo-com.svg";
-import expressLogo from "../assets/logos/icon-expressjs.svg";
-import reduxLogo from "../assets/logos/redux-logo-svgrepo-com.svg";
-import tailwindLogo from "../assets/logos/128px-Tailwind_CSS_Logo.svg.png";
-import gitLogo from "../assets/logos/git-icon-logo-svgrepo-com.svg";
-import htmlLogo from "../assets/logos/128px-HTML5_logo_and_wordmark.svg.png";
-import Button from "../components/ui/button";
+import myProfileImg from "../../assets/My-profile.jpg";
+import LogoShell from "../../components/ui/logoShell";
+import reactLogo from "../../assets/logos/react.svg";
+import cssLogo from "../../assets/logos/css-3-svgrepo-com.svg";
+import JavaScriptLogo from "../../assets/logos/128px-Unofficial_JavaScript_logo_2.svg.png";
+import typeScriptLogo from "../../assets/logos/128px-Typescript_logo_2020.svg.png";
+import nodeLogo from "../../assets/logos/nodejs-icon-svgrepo-com.svg";
+import expressLogo from "../../assets/logos/icon-expressjs.svg";
+import reduxLogo from "../../assets/logos/redux-logo-svgrepo-com.svg";
+import tailwindLogo from "../../assets/logos/128px-Tailwind_CSS_Logo.svg.png";
+import gitLogo from "../../assets/logos/git-icon-logo-svgrepo-com.svg";
+import htmlLogo from "../../assets/logos/128px-HTML5_logo_and_wordmark.svg.png";
+import Button from "../../components/ui/button";
 
 export default function AboutPage() {
   return (
@@ -18,7 +18,7 @@ export default function AboutPage() {
       <div>
         <div className="flex flex-wrap justify-center gap-10 lg:no-wrap">
           <div className="flex flex-col gap-3 sm:gap-5 md:gap-8">
-            <div className="flex justify-center items-center shrink-0 relative rounded-full special-border">
+            <div className="flex justify-center items-center shrink-0 rounded-full special-border">
               <img
                 src={myProfileImg}
                 className="rounded-full w-[clamp(220px,30vw,300px)] h-[clamp(220px,30vw,300px)] object-cover object-[50%_20%]"
@@ -48,7 +48,8 @@ export default function AboutPage() {
                 investments. Here I got to meet the companies and people
                 building growing tech products and services businesses, but this
                 wasn't enough — I wanted to understand how the products I was
-                investing in were actually built.</p>
+                investing in were actually built.
+              </p>
               <p>
                 Coding has become my outlet, a way to combine my love of
                 problem-solving with a hands-on connection to the tech market I

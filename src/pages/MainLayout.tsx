@@ -8,11 +8,10 @@ const MainLayout = () => {
   return (
     <div className="w-full h-full">
       <div className="content-width mx-auto p-0.5 h-full grid grid-rows-[minmax(0,1fr)_minmax(0,10fr)_minmax(0,1.5fr)]">
-        <nav className="flex flex-row place-items-center sticky top-2">
-          <SwitchShell />
+        <nav className="flex place-items-center fixed top-2">
           <Nav />
         </nav>
-        <main className="pt-6">
+        <main className="pt-6 w-full">
           <Outlet />
         </main>
       </div>
