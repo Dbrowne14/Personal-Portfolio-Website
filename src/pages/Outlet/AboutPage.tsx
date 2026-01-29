@@ -25,9 +25,12 @@ export default function AboutPage() {
               />
             </div>
             <div className="flex flex-row justify-around w-full">
-              <Button name="LinkedIn" />
-              <Button name="Resume" />
-              <Button name="GitHub" />
+              <Button
+                name="LinkedIn"
+                link="https://www.linkedin.com/in/david-browne-544bb1137/"
+              />
+              <Button name="GitHub" link="https://github.com/Dbrowne14" />
+              <Button name="Resume" link="" />
             </div>
           </div>
           <div className="flex flex-col gap-4">

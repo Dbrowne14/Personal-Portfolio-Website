@@ -13,7 +13,7 @@ const Nav = () => {
       <NavLargeScreens />
       <div className="flex flex-1 justify-end items-center sm:hidden">
         {" "}
-          <OpenClose toggle={toggle} setToggle={setToggle}/>
+        <OpenClose toggle={toggle} setToggle={setToggle} />
         <NavSmallScreen toggle={toggle} />
       </div>
     </div>
