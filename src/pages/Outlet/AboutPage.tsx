@@ -10,13 +10,14 @@ import reduxLogo from "../../assets/logos/redux-logo-svgrepo-com.svg";
 import tailwindLogo from "../../assets/logos/128px-Tailwind_CSS_Logo.svg.png";
 import gitLogo from "../../assets/logos/git-icon-logo-svgrepo-com.svg";
 import htmlLogo from "../../assets/logos/128px-HTML5_logo_and_wordmark.svg.png";
+import BulletList from "../../components/ui/bulletList";
 import Button from "../../components/ui/button";
 
 export default function AboutPage() {
   return (
-    <div>
-      <div>
-        <div className="flex flex-wrap justify-center gap-10 lg:no-wrap">
+    <section className="flex justify center w-full items-center flex-col gap-8">
+      <div className="content-width flex justify center  items-center flex-col gap-8">
+        <div className="content-width flex flex-col justify-center items-center gap-8 md:flex-row md:gap-18 py-4 border-b-2 md:border-none border-highlightColor/60">
           <div className="flex flex-col gap-3 sm:gap-5 md:gap-8">
             <div className="flex justify-center items-center shrink-0 rounded-full special-border">
               <img
@@ -33,16 +34,34 @@ export default function AboutPage() {
               <Button name="Resume" link="" />
             </div>
           </div>
-          <div className="flex flex-col gap-4">
-            <div className="w-full place-items-center">
+          <div className="w-auto flex md:flex-1 lg:w-full md:w-[90%] font-medium self-center-safe ">
+            <ul className="flex flex-col sm:space-y-5 md:gap-5">
+              <BulletList
+                content="Full-stack developer, lifelong learning mindset"
+                logo="🧠"
+              />
+              <BulletList
+                content="Former fintech investment banker with 8-years work ex"
+                logo="🏦"
+              />
+              <BulletList
+                content=" Passionate about JavaScript and React"
+                logo="👨‍💻"
+              />
+            </ul>
+          </div>
+        </div>
+        <div className="content-width flex flex-col justify-center gap-10">
+          <div className="w-full flex flex-col justify-center gap-4">
+            <div className="w-full">
               <h1
-                className="font-bold text-[clamp(1.4rem,2vw,2rem)]
-             w-fit"
+                className="font-bold text-[clamp(1.2rem,2vw,2rem)]
+               w-fit"
               >
-                About Me.
+                more about me...
               </h1>
             </div>
-            <div className="w-auto lg:text-[1.4rem] lg:w-full md:w-[90%] font-medium self-center-safe text-[clamp(0.6rem,2.5vw,1.3rem)] mx-auto space-y-5">
+            <div className="w-full place-items-center lg:text-[1.4rem] font-medium text-[clamp(0.7rem,2.5vw,1.3rem)] space-y-5">
               <p>
                 I’m a Full Stack Developer on a journey of life-long learning,
                 with a passion for JavaScript and all things React. I arrived
@@ -66,7 +85,7 @@ export default function AboutPage() {
             <div className="w-full place-items-center">
               <h1
                 className="font-bold text-[clamp(1.4rem,2vw,2rem)]
-             w-fit "
+               w-fit "
               >
                 Technologies.
               </h1>
@@ -86,7 +105,7 @@ export default function AboutPage() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
