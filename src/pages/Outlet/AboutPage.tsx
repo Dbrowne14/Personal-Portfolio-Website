@@ -37,10 +37,10 @@ export default function AboutPage() {
           <div className="w-auto h-full flex md:flex-1 lg:w-full md:w-[90%] font-medium">
             <div className="md:flex md:flex-1 md:flex-col md:justify-start gap-4 lg:w-full font-medium self-center-safe ">
               <ul className="flex flex-col w- gap-2 md:gap-3">
-                <BulletList content="Full-stack developer, lifelong learning mindset" />
-                <BulletList content="Former fintech investment banker with 8-years work ex" />
-                <BulletList content=" Passionate about JavaScript and React" />
-                <BulletList content=" Working at the intersection of tech and finance" />
+                <BulletList content="Full-stack developer, lifelong learning mindset" logo="👨‍💻"/>
+                <BulletList content="Former fintech investment banker with 8-years work ex" logo="🏦" />
+                <BulletList content=" Passionate about JavaScript and React" logo="🧠" />
+                <BulletList content=" Working at the intersection of tech and finance" logo="🎯" />
               </ul>
             </div>
           </div>
