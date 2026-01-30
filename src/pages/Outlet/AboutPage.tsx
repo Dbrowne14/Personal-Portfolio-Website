@@ -16,7 +16,7 @@ import Button from "../../components/ui/button";
 export default function AboutPage() {
   return (
     <section className="flex justify center w-full items-center flex-col gap-8">
-      <div className="content-width flex justify center  items-center flex-col gap-8">
+      <div className="content-width flex justify center  items-center flex-col gap-8 md:gap-16">
         <div className="content-width flex flex-col justify-center items-center gap-8 md:flex-row md:gap-18 py-4 border-b-2 md:border-none border-highlightColor/60">
           <div className="flex flex-col gap-3 sm:gap-5 md:gap-8">
             <div className="flex justify-center items-center shrink-0 rounded-full special-border">
@@ -34,21 +34,33 @@ export default function AboutPage() {
               <Button name="Resume" link="" />
             </div>
           </div>
-          <div className="w-auto flex md:flex-1 lg:w-full md:w-[90%] font-medium self-center-safe ">
-            <ul className="flex flex-col sm:space-y-5 md:gap-5">
-              <BulletList
-                content="Full-stack developer, lifelong learning mindset"
-                logo="🧠"
-              />
-              <BulletList
-                content="Former fintech investment banker with 8-years work ex"
-                logo="🏦"
-              />
-              <BulletList
-                content=" Passionate about JavaScript and React"
-                logo="👨‍💻"
-              />
-            </ul>
+          <div className="w-auto mb-4 flex md:flex-1 lg:w-full md:w-[90%] font-medium self-center-safe ">
+            <div className="md:flex md:flex-1 md:flex-col md:justify-start gap-4 lg:w-full md:w-[90%] font-medium self-center-safe " >
+              <h1
+                className="font-bold hidden md:block text-[clamp(1.2rem,2vw,2rem)]
+                 w-fit"
+              >
+                In a nutshell...
+              </h1>
+              <ul className="flex flex-col md:gap-3">
+                <BulletList
+                  content="Full-stack developer, lifelong learning mindset"
+                  logo="🧠"
+                />
+                <BulletList
+                  content="Former fintech investment banker with 8-years work ex"
+                  logo="🏦"
+                />
+                <BulletList
+                  content=" Passionate about JavaScript and React"
+                  logo="👨‍💻"
+                />
+                <BulletList
+                  content=" I like streamlining workflows, improving systems, and turning complex problems into practical outcomes."
+                  logo="🛠️"
+                />
+              </ul>
+            </div>
           </div>
         </div>
         <div className="content-width flex flex-col justify-center gap-10">
