@@ -15,11 +15,11 @@ import Button from "../../components/ui/button";
 
 export default function AboutPage() {
   return (
-    <section className="flex justify center w-full items-center flex-col gap-8">
-      <div className="content-width flex justify center  items-center flex-col gap-8 md:gap-16">
-        <div className="content-width flex flex-col justify-center items-center gap-8 md:flex-row md:gap-18 py-4 border-b-2 md:border-none border-highlightColor/60">
-          <div className="flex flex-col gap-3 sm:gap-5 md:gap-8">
-            <div className="flex justify-center items-center shrink-0 rounded-full special-border">
+    <section className="col-gaps justify center w-full items-center ">
+      <div className="col-gaps content-width justify center  items-center md:gap-16">
+        <div className="col-gaps content-width justify-center md:h-100 items-center md:flex-row md:gap-18 py-4 ">
+          <div className="col-gaps gap-3 sm:gap-5 md:gap-8">
+            <div className="flex justify-center items-center shrink-0 rounded-full">
               <img
                 src={myProfileImg}
                 className="rounded-full w-[clamp(220px,30vw,300px)] h-[clamp(220px,30vw,300px)] object-cover object-[50%_20%]"
@@ -34,33 +34,47 @@ export default function AboutPage() {
               <Button name="Resume" link="" />
             </div>
           </div>
-          <div className="w-auto mb-4 flex md:flex-1 lg:w-full md:w-[90%] font-medium self-center-safe ">
-            <div className="md:flex md:flex-1 md:flex-col md:justify-start gap-4 lg:w-full md:w-[90%] font-medium self-center-safe " >
-              <ul className="flex flex-col md:gap-3">
-                <BulletList
-                  content="Full-stack developer, lifelong learning mindset"
-                />
-                <BulletList
-                  content="Former fintech investment banker with 8-years work ex"
-                />
-                <BulletList
-                  content=" Passionate about JavaScript and React"
-                />
-                <BulletList
-                  content=" I like streamlining workflows, improving systems, and turning complex problems into practical outcomes."
-                />
+          <div className="w-auto h-full flex md:flex-1 lg:w-full md:w-[90%] font-medium">
+            <div className="md:flex md:flex-1 md:flex-col md:justify-start gap-4 lg:w-full font-medium self-center-safe ">
+              <ul className="flex flex-col w- gap-2 md:gap-3">
+                <BulletList content="Full-stack developer, lifelong learning mindset" />
+                <BulletList content="Former fintech investment banker with 8-years work ex" />
+                <BulletList content=" Passionate about JavaScript and React" />
+                <BulletList content=" Working at the intersection of tech and finance" />
               </ul>
             </div>
           </div>
         </div>
         <div className="content-width flex flex-col justify-center gap-10">
+          <div className="flex flex-wrap gap-4 rounded-2xl pb-2 mb-4">
+            <div className="w-full place-items-center sm:hidden">
+              <h1
+                className="font-bold text-[clamp(1.4rem,2vw,2rem)]
+               w-fit "
+              >
+                Technologies.
+              </h1>
+            </div>
+            <div className="flex lg:flex-1 flex-wrap justify-center gap-2 items-center font-medium">
+              <LogoShell name="JavaScript" imgUrl={JavaScriptLogo} />
+              <LogoShell name="TypeScript" imgUrl={typeScriptLogo} />
+              <LogoShell name="React" imgUrl={reactLogo} />
+              <LogoShell name="Node.js" imgUrl={nodeLogo} />
+              <LogoShell name="Express.js" imgUrl={expressLogo} />
+              <LogoShell name="Redux" imgUrl={reduxLogo} />
+              <LogoShell name="Tailwind CSS" imgUrl={tailwindLogo} />
+              <LogoShell name="Git" imgUrl={gitLogo} />
+              <LogoShell name="CSS" imgUrl={cssLogo} />
+              <LogoShell name="HTML" imgUrl={htmlLogo} />
+            </div>
+          </div>
           <div className="w-full flex flex-col justify-center gap-4">
             <div className="w-full">
               <h1
                 className="font-bold text-[clamp(1.2rem,2vw,2rem)]
                w-fit"
               >
-                more about me...
+                More about me...
               </h1>
             </div>
             <div className="w-full place-items-center lg:text-[1.4rem] font-medium text-[clamp(0.7rem,2.5vw,1.3rem)] space-y-5">
@@ -81,28 +95,6 @@ export default function AboutPage() {
                 to learn, explore new tools, and build things that are not just
                 functional, but meaningful.
               </p>
-            </div>
-          </div>
-          <div className="flex flex-wrap gap-4 rounded-2xl pb-2 mb-4">
-            <div className="w-full place-items-center">
-              <h1
-                className="font-bold text-[clamp(1.4rem,2vw,2rem)]
-               w-fit "
-              >
-                Technologies.
-              </h1>
-            </div>
-            <div className="flex lg:flex-1 flex-wrap justify-center gap-2 items-center font-medium">
-              <LogoShell name="JavaScript" imgUrl={JavaScriptLogo} />
-              <LogoShell name="TypeScript" imgUrl={typeScriptLogo} />
-              <LogoShell name="React" imgUrl={reactLogo} />
-              <LogoShell name="Node.js" imgUrl={nodeLogo} />
-              <LogoShell name="Express.js" imgUrl={expressLogo} />
-              <LogoShell name="Redux" imgUrl={reduxLogo} />
-              <LogoShell name="Tailwind CSS" imgUrl={tailwindLogo} />
-              <LogoShell name="Git" imgUrl={gitLogo} />
-              <LogoShell name="CSS" imgUrl={cssLogo} />
-              <LogoShell name="HTML" imgUrl={htmlLogo} />
             </div>
           </div>
         </div>

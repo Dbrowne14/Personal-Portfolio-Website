@@ -9,7 +9,7 @@
   --font-lexend: "Lexend Deca";
   --color-amberHome: rgb(218, 170, 170);
   --standard-width: 1000px;
-  --color-highlightRed:rgb(151, 4, 4);
+  --color-highlightRed: rgb(151, 4, 4);
   --color-highlightBlue: rgb(70, 148, 221);
   --color-highlightColor: var(--color-highlightRed);
   --color-standardBg: rgb(252, 249, 249);
@@ -35,9 +35,9 @@
 
     --bg-gradient: linear-gradient(
       315deg,
-      rgb(252, 249, 249) 0%,
-      rgb(247, 245, 245) 50%,
-      rgb(249, 247, 246) 100%
+      rgb(255, 255, 255) 0%,
+      rgb(255, 253, 253) 50%,
+      rgb(255, 255, 255) 100%
     );
 
     --color-amberHome: oklch(0.145 0 0);
@@ -70,7 +70,11 @@
   }
 
   .content-width {
-    @apply lg:max-w-5xl md:max-w-4xl sm:max-w-xl max-w-[80vw] w-[80vw];
+    @apply lg:max-w-7xl md:max-w-4xl sm:max-w-xl max-w-[80vw] w-[80vw];
+  }
+
+  .col-gaps {
+    @apply flex flex-col gap-8
   }
 
   .nav-link,
@@ -109,7 +113,6 @@
     border-bottom: 1.5px solid var(--color-highlightColor);
     border-right: 1.5px solid var(--color-highlightColor);
   }
-
 
   .nav-link {
     text-decoration: none;
@@ -257,6 +260,19 @@
     background-origin: border-box;
     border-image-slice: 1;
   }
+
+  .cool-background {
+    background-image:
+      linear-gradient(var(--color-highlightBlue), var(--color-highlightRed)),
+      radial-gradient(
+        circle at top left,
+        var(--color-highlightBlue),
+        var(--color-highlightRed)
+      );
+    background-clip: content-box, border-box;
+    background-origin: border-box;
+    border-image-slice: 1;
+  }
 }
 
 @layer utilities {
@@ -325,7 +341,6 @@
   --background: oklch(0.145 0 0);
   --foreground: rgb(218, 170, 170);
   --color-highlightColor: var(--color-highlightBlue);
-  
 }
 
 /*::-webkit-scrollbar {
