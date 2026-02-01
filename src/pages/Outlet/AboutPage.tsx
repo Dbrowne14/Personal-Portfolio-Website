@@ -79,7 +79,7 @@ export default function AboutPage() {
             </div>
             <div className="w-full place-items-center lg:text-[1.4rem] font-medium text-[clamp(0.7rem,2.5vw,1.3rem)] space-y-5">
               <p>
-                I’m a Full Stack Developer on a journey of life-long learning,
+                I’m a Full-Stack Developer on a journey of life-long learning,
                 with a passion for JavaScript and all things React. I arrived
                 here after a decade in investment banking, spending my time in
                 stuffy boardrooms wearing a suit and advising on large fintech
