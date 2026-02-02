@@ -11,12 +11,13 @@ const linkedInFav = ({ link }: LinkProp) => {
       rel="noopener noreferrer"
       aria-label="Visit LinkedIn profile (opens in new tab)"
       href={link}
+      className="text-foreground hover:pb-1"
     >
       <svg
         width="24"
         height="24"
         viewBox="0 0 24 24"
-        fill="none"
+        fill="var(--foreground)"
         xmlns="http://www.w3.org/2000/svg"
         className="w-7 h-7"
       >

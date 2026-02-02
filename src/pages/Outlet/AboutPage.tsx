@@ -20,35 +20,38 @@ export default function AboutPage() {
     <section className="col-gaps justify center w-full items-center ">
       <div className="col-gaps content-width justify center  items-center md:gap-16">
         <div className="col-gaps content-width justify-center md:h-100 items-center md:flex-row md:gap-18 py-4 ">
-          <div className="col-gaps gap-3 sm:gap-5 md:gap-8">
+          <div className="col-gaps gap-4 sm:gap-5 md:gap-8">
             <div className="flex justify-center items-center shrink-0 rounded-full">
               <img
                 src={myProfileImg}
                 className="rounded-full w-[clamp(220px,30vw,300px)] h-[clamp(220px,30vw,300px)] object-cover object-[50%_20%]"
               />
             </div>
-            <div className="flex flex-row justify-center items-center w-full gap-6">
-              <LinkedInFav
-                link="https://www.linkedin.com/in/david-browne-544bb1137/"
-              />
-              <GithubFav link="https://github.com/Dbrowne14" />
-              <CVFav link="" />
+            <div className="flex flex-1 justify-center gap-4">
+              <h1
+                className="hidden sm:block p-3 border-r font-bold border-gray-400 text-[14px]
+               w-fit"
+              >
+                Profile
+              </h1>
+              <div className="flex flex-row justify-center items-center gap-6">
+                <LinkedInFav link="https://www.linkedin.com/in/david-browne-544bb1137/" />
+                <GithubFav link="https://github.com/Dbrowne14" />
+                <CVFav link="" />
+              </div>
             </div>
           </div>
           <div className="w-auto h-full flex md:flex-1 lg:w-full md:w-[90%] ">
             <div className="md:flex md:flex-1 md:flex-col md:justify-start gap-4 lg:w-full self-center-safe ">
-              <ul className="flex flex-col w- gap-2 md:gap-3">
-                <BulletList
-                  content="Full-stack developer, lifelong learning mindset"
-                  logo="👨‍💻"
-                />
+              <ul className="flex flex-col gap-2 md:gap-3">
+                <BulletList content="Full-stack developer" logo="👨‍💻" />
                 <BulletList
                   content="Former fintech investment banker with 8-years work ex"
                   logo="🏦"
                 />
                 <BulletList
                   content=" Passionate about JavaScript and React"
-                  logo="🧠"
+                  logo="🤟"
                 />
                 <BulletList
                   content=" Working at the intersection of tech and finance"
@@ -63,7 +66,7 @@ export default function AboutPage() {
             <div className="flex lg:flex-1 flex-wrap justify-center gap-6 items-center">
               <h1
                 className="p-3 border-b font-bold lg:border-b-0 lg:border-r border-gray-400 text-[17px]
-               w-fit"
+               w-fit text-"
               >
                 Tech Stack
               </h1>
@@ -82,15 +85,15 @@ export default function AboutPage() {
             </div>
           </div>
           <div className="w-full flex flex-col justify-center gap-4">
-            <div className="w-full">
+            <div className="sm:w-full flex justify-center sm:justify-start ">
               <h1
-                className=" text-[clamp(1.2rem,2vw,2rem)]
-               w-fit"
+                className=" w-fit font-bold text-[clamp(1.2rem,2vw,1.4rem)] border-b pb-3 border-gray-400 sm:border-b-0
+                "
               >
                 More about me...
               </h1>
             </div>
-            <div className="w-full place-items-center lg:text-[1.4rem] text-[clamp(0.7rem,2.5vw,1.3rem)] space-y-5">
+            <div className="w-full place-items-center  text-[clamp(0.7rem,2.5vw,1.1rem)] space-y-5 lg:leading-9">
               <p>
                 I’m a Full-Stack Developer on a journey of life-long learning,
                 with a passion for JavaScript and all things React. I arrived
@@ -107,6 +110,16 @@ export default function AboutPage() {
                 had been immersed in for years. I’m driven by a constant quest
                 to learn, explore new tools, and build things that are not just
                 functional, but meaningful.
+              </p>
+              <p>
+                I’m someone who likes keeping both my mind and life in motion. I
+                manage my own investment portfolio and enjoy the strategy behind
+                growing it over time. Outside of that, I’m a big anime fan,
+                especially classic 80s and 90s Ghibli films, and I’m into pretty
+                much every sport — with football and cycling at the top of the
+                list. Long walks are my reset button, and I’m always up for
+                learning something new or experiencing something different.
+                Lately, my soundtrack has been a steady stream of 90s trip-hop.
               </p>
             </div>
           </div>

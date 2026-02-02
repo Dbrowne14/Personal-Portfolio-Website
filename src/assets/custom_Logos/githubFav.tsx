@@ -11,6 +11,7 @@ const githubFav = ({ link }: LinkProp) => {
       rel="noopener noreferrer"
       aria-label="Visit Github profile (opens in new tab)"
       href={link}
+      className="text-foreground hover:pb-1"
     >
       <svg
         width="24"

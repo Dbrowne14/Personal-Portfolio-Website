@@ -75,7 +75,7 @@
   }
 
   .col-gaps {
-    @apply flex flex-col gap-8
+    @apply flex flex-col gap-8;
   }
 
   .nav-link,
@@ -234,7 +234,7 @@
   }
 
   .logo-card {
-    @apply h-15 w-17 rounded-xl bg-lightBg items-center justify-evenly sm:h-18 sm:w-18 lg:h-19 md:w-19 overflow-hidden;
+    @apply h-15 w-17 rounded-xl items-center justify-evenly sm:h-18 sm:w-18 lg:h-19 md:w-19 overflow-hidden;
   }
 
   .special-border {
@@ -340,7 +340,7 @@
   );
   --color-amberHome: rgb(218, 170, 170);
   --background: oklch(0.145 0 0);
-  --foreground: rgb(218, 170, 170);
+  --foreground: white;
   --color-highlightColor: var(--color-highlightBlue);
 }
 
