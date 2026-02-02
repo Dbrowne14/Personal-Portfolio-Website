@@ -57,3 +57,5 @@ const Projects = () => {
 };
 
 export default Projects;
+
+// use this portfolio website as inspiration https://sumanthsamala.com/projects
