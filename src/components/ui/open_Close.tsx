@@ -1,12 +1,7 @@
-import React from "react";
 import { useScrollStatus } from "../../hooks/useScrollStatus";
+import type { DynamicToggle } from "@/types/components";
 
-type Toggle = {
-  toggle: boolean;
-  setToggle: React.Dispatch<React.SetStateAction<boolean>>;
-};
-
-const open_Close = ({ toggle, setToggle }: Toggle) => {
+const open_Close = ({ toggle, setToggle }: DynamicToggle) => {
   const scrollThreshold = useScrollStatus(30);
   return (
     <div

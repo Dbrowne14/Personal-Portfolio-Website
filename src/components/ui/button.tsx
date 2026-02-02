@@ -1,11 +1,6 @@
-import React from "react";
+import type { NameWithLink } from "../../types/components";
 
-type NamedComponent = {
-  name: string;
-  link: string;
-};
-
-const button = ({ name, link }: NamedComponent) => {
+const button = ({ name, link }: NameWithLink) => {
   return (
     <div className="special-border drop-shadow-xl/20  w-[30%] h-10 rounded-full flex items-center ">
       <a

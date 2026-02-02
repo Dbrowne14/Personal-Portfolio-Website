@@ -44,18 +44,18 @@ export default function AboutPage() {
           <div className="w-auto h-full flex md:flex-1 lg:w-full md:w-[90%] ">
             <div className="md:flex md:flex-1 md:flex-col md:justify-start gap-4 lg:w-full self-center-safe ">
               <ul className="flex flex-col gap-2 md:gap-3">
-                <BulletList content="Full-stack developer" logo="👨‍💻" />
+                <BulletList content="Full-stack developer" link="👨‍💻" />
                 <BulletList
                   content="Former fintech investment banker with 8-years work ex"
-                  logo="🏦"
+                  link="🏦"
                 />
                 <BulletList
                   content=" Passionate about JavaScript and React"
-                  logo="🤟"
+                  link="🤟"
                 />
                 <BulletList
                   content=" Working at the intersection of tech and finance"
-                  logo="🎯"
+                  link="🎯"
                 />
               </ul>
             </div>
@@ -71,16 +71,16 @@ export default function AboutPage() {
                 Tech Stack
               </h1>
               <div className="flex lg:flex-1 flex-wrap justify-center lg:justify-start gap-2 items-center">
-                <LogoShell name="JavaScript" imgUrl={JavaScriptLogo} />
-                <LogoShell name="TypeScript" imgUrl={typeScriptLogo} />
-                <LogoShell name="React" imgUrl={reactLogo} />
-                <LogoShell name="Node.js" imgUrl={nodeLogo} />
-                <LogoShell name="Express.js" imgUrl={expressLogo} />
-                <LogoShell name="Redux" imgUrl={reduxLogo} />
-                <LogoShell name="Tailwind CSS" imgUrl={tailwindLogo} />
-                <LogoShell name="Git" imgUrl={gitLogo} />
-                <LogoShell name="CSS" imgUrl={cssLogo} />
-                <LogoShell name="HTML" imgUrl={htmlLogo} />
+                <LogoShell name="JavaScript" link={JavaScriptLogo} />
+                <LogoShell name="TypeScript" link={typeScriptLogo} />
+                <LogoShell name="React" link={reactLogo} />
+                <LogoShell name="Node.js" link={nodeLogo} />
+                <LogoShell name="Express.js" link={expressLogo} />
+                <LogoShell name="Redux" link={reduxLogo} />
+                <LogoShell name="Tailwind CSS" link={tailwindLogo} />
+                <LogoShell name="Git" link={gitLogo} />
+                <LogoShell name="CSS" link={cssLogo} />
+                <LogoShell name="HTML" link={htmlLogo} />
               </div>
             </div>
           </div>

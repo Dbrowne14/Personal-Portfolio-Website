@@ -1,8 +1,4 @@
-import React from "react";
-
-type LinkProp = {
-  link: string;
-};
+import type { LinkProp } from "../../types/components";
 
 const cvFav = ({ link }: LinkProp) => {
   return (

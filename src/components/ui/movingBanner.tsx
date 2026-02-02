@@ -1,4 +1,3 @@
-
 const MovingBanner = () => {
   return (
     <div>

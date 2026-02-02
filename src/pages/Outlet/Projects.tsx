@@ -1,5 +1,3 @@
-import React from "react";
-
 const Projects = () => {
   return (
     <section className="flex flex-col gap-8 overflow-auto">
@@ -46,10 +44,7 @@ const Projects = () => {
           suggests blocks and sets, records scores and identifies matchups for
           the Magic the Gathering Chaos Draft format
         </p>
-        <p>
-          Built using JavaScript, CSS and
-          HTML
-        </p>
+        <p>Built using JavaScript, CSS and HTML</p>
         <p>
           Github: <a href="">...</a>
         </p>

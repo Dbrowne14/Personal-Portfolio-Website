@@ -1,5 +1,4 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink } from "react-router-dom";
 
 const NavLargeScreens = () => {
   return (
@@ -49,7 +48,7 @@ const NavLargeScreens = () => {
         </li>
       </ul>
     </div>
-  )
-}
+  );
+};
 
-export default NavLargeScreens
+export default NavLargeScreens;

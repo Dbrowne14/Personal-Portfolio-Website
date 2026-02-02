@@ -1,10 +1,5 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
-import { useScrollStatus } from "@/hooks/useScrollStatus";
-
-type Toggle = {
-  toggle: boolean;
-};
+import type { Toggle } from "@/types/components";
 
 const NavSmallScreen = ({ toggle }: Toggle) => {
   return (
