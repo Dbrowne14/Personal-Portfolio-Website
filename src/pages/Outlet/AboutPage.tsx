@@ -1,15 +1,6 @@
 import myProfileImg from "../../assets/My-profile.jpg";
+import { logos } from "../../data/logoData";
 import LogoShell from "../../components/ui/logoShell";
-import reactLogo from "../../assets/logos/react.svg";
-import cssLogo from "../../assets/logos/css-3-svgrepo-com.svg";
-import JavaScriptLogo from "../../assets/logos/128px-Unofficial_JavaScript_logo_2.svg.png";
-import typeScriptLogo from "../../assets/logos/128px-Typescript_logo_2020.svg.png";
-import nodeLogo from "../../assets/logos/nodejs-icon-svgrepo-com.svg";
-import expressLogo from "../../assets/logos/expressLogo.png";
-import reduxLogo from "../../assets/logos/redux-logo-svgrepo-com.svg";
-import tailwindLogo from "../../assets/logos/128px-Tailwind_CSS_Logo.svg.png";
-import gitLogo from "../../assets/logos/git-icon-logo-svgrepo-com.svg";
-import htmlLogo from "../../assets/logos/128px-HTML5_logo_and_wordmark.svg.png";
 import BulletList from "../../components/ui/bulletList";
 import LinkedInFav from "../../assets/custom_Logos/linkedInFav";
 import GithubFav from "../../assets/custom_Logos/githubFav";
@@ -71,16 +62,9 @@ export default function AboutPage() {
                 Tech Stack
               </h1>
               <div className="flex lg:flex-1 flex-wrap justify-center lg:justify-start gap-2 items-center">
-                <LogoShell name="JavaScript" link={JavaScriptLogo} />
-                <LogoShell name="TypeScript" link={typeScriptLogo} />
-                <LogoShell name="React" link={reactLogo} />
-                <LogoShell name="Node.js" link={nodeLogo} />
-                <LogoShell name="Express.js" link={expressLogo} />
-                <LogoShell name="Redux" link={reduxLogo} />
-                <LogoShell name="Tailwind CSS" link={tailwindLogo} />
-                <LogoShell name="Git" link={gitLogo} />
-                <LogoShell name="CSS" link={cssLogo} />
-                <LogoShell name="HTML" link={htmlLogo} />
+                {logos.map(({ name, link }) => {
+                  return <LogoShell name={name} link={link} />;
+                })}
               </div>
             </div>
           </div>
