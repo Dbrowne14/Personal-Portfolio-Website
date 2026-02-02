@@ -6,8 +6,8 @@ type Bullet = LinkProp & {
 
 const bulletList = ({ content, link }: Bullet) => {
   return (
-    <li className="flex justify-start items-center flex-row gap-4 h-10 md:h-18 w-full text-[clamp(0.7rem,2.5vw,1.1rem)]">
-      <div className=" rounded-full md:h-10 md:w-10 dark:border sm:h-8 sm:w-8 h-6 w-6 border-foreground flex justify-center items-center">
+    <li className="flex justify-start items-center flex-row gap-4 h-10 md:h-18 w-full text-[clamp(0.7rem,2.5vw,1.1rem)] ">
+      <div className=" rounded-full md:h-10 md:w-10 dark:border sm:h-8 sm:w-8 h-6 w-6 border-foreground flex justify-center items-center hover:pb-2">
         {" "}
         {link}
       </div>
