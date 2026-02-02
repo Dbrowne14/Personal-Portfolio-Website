@@ -5,13 +5,13 @@ import cssLogo from "../../assets/logos/css-3-svgrepo-com.svg";
 import JavaScriptLogo from "../../assets/logos/128px-Unofficial_JavaScript_logo_2.svg.png";
 import typeScriptLogo from "../../assets/logos/128px-Typescript_logo_2020.svg.png";
 import nodeLogo from "../../assets/logos/nodejs-icon-svgrepo-com.svg";
-import expressLogo from "../../assets/logos/icon-expressjs.svg";
+import expressLogo from "../../assets/logos/expressLogo.png";
 import reduxLogo from "../../assets/logos/redux-logo-svgrepo-com.svg";
 import tailwindLogo from "../../assets/logos/128px-Tailwind_CSS_Logo.svg.png";
 import gitLogo from "../../assets/logos/git-icon-logo-svgrepo-com.svg";
 import htmlLogo from "../../assets/logos/128px-HTML5_logo_and_wordmark.svg.png";
 import BulletList from "../../components/ui/bulletList";
-import Button from "../../components/ui/button";
+import ProfileButton from "../../components/ui/button";
 
 export default function AboutPage() {
   return (
@@ -26,58 +26,70 @@ export default function AboutPage() {
               />
             </div>
             <div className="flex flex-row justify-around w-full">
-              <Button
+              <ProfileButton
                 name="LinkedIn"
                 link="https://www.linkedin.com/in/david-browne-544bb1137/"
               />
-              <Button name="GitHub" link="https://github.com/Dbrowne14" />
-              <Button name="Resume" link="" />
+              <ProfileButton name="GitHub" link="https://github.com/Dbrowne14" />
+              <ProfileButton name="Resume" link="" />
             </div>
           </div>
-          <div className="w-auto h-full flex md:flex-1 lg:w-full md:w-[90%] font-medium">
-            <div className="md:flex md:flex-1 md:flex-col md:justify-start gap-4 lg:w-full font-medium self-center-safe ">
+          <div className="w-auto h-full flex md:flex-1 lg:w-full md:w-[90%] ">
+            <div className="md:flex md:flex-1 md:flex-col md:justify-start gap-4 lg:w-full self-center-safe ">
               <ul className="flex flex-col w- gap-2 md:gap-3">
-                <BulletList content="Full-stack developer, lifelong learning mindset" logo="👨‍💻"/>
-                <BulletList content="Former fintech investment banker with 8-years work ex" logo="🏦" />
-                <BulletList content=" Passionate about JavaScript and React" logo="🧠" />
-                <BulletList content=" Working at the intersection of tech and finance" logo="🎯" />
+                <BulletList
+                  content="Full-stack developer, lifelong learning mindset"
+                  logo="👨‍💻"
+                />
+                <BulletList
+                  content="Former fintech investment banker with 8-years work ex"
+                  logo="🏦"
+                />
+                <BulletList
+                  content=" Passionate about JavaScript and React"
+                  logo="🧠"
+                />
+                <BulletList
+                  content=" Working at the intersection of tech and finance"
+                  logo="🎯"
+                />
               </ul>
             </div>
           </div>
         </div>
         <div className="content-width flex flex-col justify-center gap-10">
           <div className="flex flex-wrap gap-4 rounded-2xl pb-2 mb-4">
-            <div className="w-full place-items-center sm:hidden">
+            <div className="flex lg:flex-1 flex-wrap justify-center gap-6 items-center">
               <h1
-                className="font-bold text-[clamp(1.4rem,2vw,2rem)]
-               w-fit "
+                className="p-3 border-b font-bold lg:border-b-0 lg:border-r border-gray-400 text-[17px]
+               w-fit"
               >
-                Technologies.
+                Tech Stack
               </h1>
-            </div>
-            <div className="flex lg:flex-1 flex-wrap justify-center gap-2 items-center font-medium">
-              <LogoShell name="JavaScript" imgUrl={JavaScriptLogo} />
-              <LogoShell name="TypeScript" imgUrl={typeScriptLogo} />
-              <LogoShell name="React" imgUrl={reactLogo} />
-              <LogoShell name="Node.js" imgUrl={nodeLogo} />
-              <LogoShell name="Express.js" imgUrl={expressLogo} />
-              <LogoShell name="Redux" imgUrl={reduxLogo} />
-              <LogoShell name="Tailwind CSS" imgUrl={tailwindLogo} />
-              <LogoShell name="Git" imgUrl={gitLogo} />
-              <LogoShell name="CSS" imgUrl={cssLogo} />
-              <LogoShell name="HTML" imgUrl={htmlLogo} />
+              <div className="flex lg:flex-1 flex-wrap justify-center lg:justify-start gap-2 items-center">
+                <LogoShell name="JavaScript" imgUrl={JavaScriptLogo} />
+                <LogoShell name="TypeScript" imgUrl={typeScriptLogo} />
+                <LogoShell name="React" imgUrl={reactLogo} />
+                <LogoShell name="Node.js" imgUrl={nodeLogo} />
+                <LogoShell name="Express.js" imgUrl={expressLogo} />
+                <LogoShell name="Redux" imgUrl={reduxLogo} />
+                <LogoShell name="Tailwind CSS" imgUrl={tailwindLogo} />
+                <LogoShell name="Git" imgUrl={gitLogo} />
+                <LogoShell name="CSS" imgUrl={cssLogo} />
+                <LogoShell name="HTML" imgUrl={htmlLogo} />
+              </div>
             </div>
           </div>
           <div className="w-full flex flex-col justify-center gap-4">
             <div className="w-full">
               <h1
-                className="font-bold text-[clamp(1.2rem,2vw,2rem)]
+                className=" text-[clamp(1.2rem,2vw,2rem)]
                w-fit"
               >
                 More about me...
               </h1>
             </div>
-            <div className="w-full place-items-center lg:text-[1.4rem] font-medium text-[clamp(0.7rem,2.5vw,1.3rem)] space-y-5">
+            <div className="w-full place-items-center lg:text-[1.4rem] text-[clamp(0.7rem,2.5vw,1.3rem)] space-y-5">
               <p>
                 I’m a Full-Stack Developer on a journey of life-long learning,
                 with a passion for JavaScript and all things React. I arrived

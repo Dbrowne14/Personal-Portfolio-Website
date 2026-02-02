@@ -7,6 +7,7 @@
   --font-indie: "Indie flower";
   --font-quicksand: "Quicksand";
   --font-lexend: "Lexend Deca";
+  --font-poppins: "Poppins";
   --color-amberHome: rgb(218, 170, 170);
   --standard-width: 1000px;
   --color-highlightRed: rgb(151, 4, 4);
@@ -28,9 +29,9 @@
   }
 
   :root {
-    font-family: "Quicksand", sans-serif;
+    font-family: var(--font-poppins);
     line-height: 1.5;
-    font-weight: 400;
+    font-weight: 300;
     width: 100%;
 
     --bg-gradient: linear-gradient(
@@ -233,7 +234,7 @@
   }
 
   .logo-card {
-    @apply h-15 w-17 rounded-xl bg-lightBg items-center justify-evenly sm:h-25 sm:w-25 lg:h-30 md:w-30 overflow-hidden;
+    @apply h-15 w-17 rounded-xl bg-lightBg items-center justify-evenly sm:h-18 sm:w-18 lg:h-19 md:w-19 overflow-hidden;
   }
 
   .special-border {

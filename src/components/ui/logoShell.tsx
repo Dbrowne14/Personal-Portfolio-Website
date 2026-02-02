@@ -11,7 +11,6 @@ const logoShell = ({ name, imgUrl }: MyComponentProps) => {
       <div className="h-[75%] flex justify-center items-center">
         <img src={imgUrl} className="justify-self-center h-[85%] w-[90%]" />
       </div>
-      <div className="h-[25%] font-bold text-[0.6rem] md:text-[0.7rem] lg:text-[0.8rem] text-center">{name}</div>
     </div>
   );
 };
