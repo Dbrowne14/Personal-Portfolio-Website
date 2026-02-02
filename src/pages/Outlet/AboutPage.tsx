@@ -11,7 +11,9 @@ import tailwindLogo from "../../assets/logos/128px-Tailwind_CSS_Logo.svg.png";
 import gitLogo from "../../assets/logos/git-icon-logo-svgrepo-com.svg";
 import htmlLogo from "../../assets/logos/128px-HTML5_logo_and_wordmark.svg.png";
 import BulletList from "../../components/ui/bulletList";
-import ProfileButton from "../../components/ui/button";
+import LinkedInFav from "../../assets/custom_Logos/linkedInFav";
+import GithubFav from "../../assets/custom_Logos/githubFav";
+import CVFav from "../../assets/custom_Logos/cvFav";
 
 export default function AboutPage() {
   return (
@@ -25,13 +27,12 @@ export default function AboutPage() {
                 className="rounded-full w-[clamp(220px,30vw,300px)] h-[clamp(220px,30vw,300px)] object-cover object-[50%_20%]"
               />
             </div>
-            <div className="flex flex-row justify-around w-full">
-              <ProfileButton
-                name="LinkedIn"
+            <div className="flex flex-row justify-center items-center w-full gap-6">
+              <LinkedInFav
                 link="https://www.linkedin.com/in/david-browne-544bb1137/"
               />
-              <ProfileButton name="GitHub" link="https://github.com/Dbrowne14" />
-              <ProfileButton name="Resume" link="" />
+              <GithubFav link="https://github.com/Dbrowne14" />
+              <CVFav link="" />
             </div>
           </div>
           <div className="w-auto h-full flex md:flex-1 lg:w-full md:w-[90%] ">
