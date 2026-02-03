@@ -1,8 +1,33 @@
 import { Switch } from "./switch";
 import { useScrollStatus } from "../../hooks/useScrollStatus";
+import { useEffect, useState } from "react";
 
 const switchShell = () => {
   const scrollThreshold = useScrollStatus(30);
+
+  const [dark, setDark] = useState(
+    typeof window !== "undefined" &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches,
+  );
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+    document.documentElement.classList.toggle("dark", dark);
+
+    const handler = (e: MediaQueryListEvent) => {
+      setDark(e.matches);
+      document.documentElement.classList.toggle("dark", e.matches);
+    };
+
+    mediaQuery.addEventListener("change", handler);
+    return () => mediaQuery.removeEventListener("change", handler);
+  }, [dark]);
+
+  const toggleDark = (checked: boolean) => {
+    setDark(checked);
+    document.documentElement.classList.toggle("dark", checked);
+  };
+
   return (
     <div
       className={`w-fit h-fit ${scrollThreshold ? "hidden" : "inline-flex"} rounded-full dark:bg-[rgba(83,79,79,0.6)] bg-[rgba(228,217,217,0.54)] flex-row gap-2 justify-center items-center`}
@@ -18,11 +43,7 @@ const switchShell = () => {
         <span className="hidden sm:block dark:hidden">Light Mode</span>
         <span className="hidden sm:hidden dark:sm:block">Dark Mode</span>
       </h3>
-      <Switch
-        onCheckedChange={(checked) => {
-          document.documentElement.classList.toggle("dark", checked);
-        }}
-      />
+      <Switch checked={dark} onCheckedChange={toggleDark} />
     </div>
   );
 };

@@ -1,8 +1,17 @@
 import Nav from "./Navigation/Nav";
 import { Outlet } from "react-router-dom";
+import { useEffect } from "react";
 import MovingBanner from "../components/ui/movingBanner";
 
 const MainLayout = () => {
+  useEffect(() => {
+    const prefersDark = window.matchMedia(
+      "(prefers-color-scheme: dark)",
+    ).matches;
+    if (prefersDark) {
+      document.documentElement.classList.add("dark");
+    }
+  }, []);
   return (
     <div className="w-full h-full">
       <div className="mx-auto h-full grid grid-rows-[minmax(0,1fr)_minmax(0,10fr)_minmax(0,1fr)] place-items-center">

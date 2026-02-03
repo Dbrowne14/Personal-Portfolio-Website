@@ -1,7 +1,13 @@
+import ProjectsCard from "../../components/ui/projectsCard";
+
 const Projects = () => {
   return (
     <section className="flex flex-col gap-8 overflow-auto">
-      <div className="flex flex-col gap-1">
+      <div className="flex flex-col gap-4 items-center">
+        <ProjectsCard />
+        <ProjectsCard />
+        <ProjectsCard />
+        <ProjectsCard />
         <h2>GifGallery: Reddits best Gifs all in one place</h2>
         <p>
           I designed an app that displays interesting and cool gifs in a gallery
