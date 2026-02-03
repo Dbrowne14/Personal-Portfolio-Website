@@ -18,7 +18,7 @@ const MainLayout = () => {
         <nav className="w-full h-full flex justify-center sticky top-0 z-50 items-center ">
           <Nav />
         </nav>
-        <main className="content-width pt-6 sm:pt-15 w-full h-full">
+        <main className="content-width pt-6 sm:pt-15 h-full">
           <Outlet />
         </main>
       </div>

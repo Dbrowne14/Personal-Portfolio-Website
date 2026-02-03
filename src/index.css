@@ -17,6 +17,7 @@
   --color-lightBg: rgba(238, 232, 232, 0.2);
   --color-iconBg: rgba(1, 1, 1, 0.13);
   --color-iconText: rgb(237, 238, 245);
+  --text-variableText: clamp(0.7rem,2.5vw,1.1rem)
 }
 
 @layer base {

@@ -79,7 +79,7 @@ export default function AboutPage() {
                 More about me...
               </h1>
             </div>
-            <div className="w-full place-items-center  text-[clamp(0.7rem,2.5vw,1.1rem)] space-y-5 lg:leading-9">
+            <div className="w-full place-items-center  text-variableText space-y-5 lg:leading-9">
               <p>
                 I’m a Full-Stack Developer on a journey of life-long learning,
                 with a passion for JavaScript and all things React. I arrived
