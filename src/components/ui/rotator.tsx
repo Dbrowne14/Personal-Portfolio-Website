@@ -10,12 +10,8 @@ export function Rotator({ array }: RotatorProps) {
   const currentMusic = array[index];
     const [visible, setVisible] = useState(true);
 
-  // Fade effect every time index changes
   useEffect(() => {
-    // Start fade out
     setVisible(false);
-
-    // Fade in after a short delay (matches CSS transition duration)
     const timeout = setTimeout(() => setVisible(true), 1000);
 
     return () => clearTimeout(timeout);
