@@ -18,7 +18,7 @@ const MainLayout = () => {
         <nav className="w-full h-full flex justify-center sticky top-0 z-50 items-center ">
           <Nav />
         </nav>
-        <main className="content-width pt-6 sm:pt-15 h-full">
+        <main className="content-width py-6 sm:pt-15 h-full">
           <Outlet />
         </main>
       </div>
@@ -28,3 +28,5 @@ const MainLayout = () => {
 };
 
 export default MainLayout;
+
+//find a wayu to add a bottom margin
