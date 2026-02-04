@@ -1,5 +1,5 @@
 import { useScrollStatus } from "../../hooks/useScrollStatus";
-import type { DynamicToggle } from "@/types/components";
+import type { DynamicToggle } from "@/types/propTypes";
 
 const open_Close = ({ toggle, setToggle }: DynamicToggle) => {
   const scrollThreshold = useScrollStatus(30);

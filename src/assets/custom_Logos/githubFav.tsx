@@ -1,4 +1,4 @@
-import type { LinkProp } from "../../types/components";
+import type { LinkProp } from "../../types/propTypes";
 
 const githubFav = ({ link }: LinkProp) => {
   return (

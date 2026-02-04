@@ -8,9 +8,14 @@ import reduxLogo from "../assets/logos/redux-logo-svgrepo-com.svg";
 import tailwindLogo from "../assets/logos/128px-Tailwind_CSS_Logo.svg.png";
 import gitLogo from "../assets/logos/git-icon-logo-svgrepo-com.svg";
 import htmlLogo from "../assets/logos/128px-HTML5_logo_and_wordmark.svg.png";
-import type { NameWithLink } from "../types/components";
+import type { LinkProp } from "../types/propTypes";
+import type { AllowedLanguages } from "@/types/dataTypes";
 
-export const logos: NameWithLink[] = [
+export type LogoList = LinkProp & {
+  name: AllowedLanguages;
+};
+
+export const logos: LogoList[] = [
   { name: "React", link: reactLogo },
   { name: "CSS", link: cssLogo },
   { name: "JavaScript", link: JavaScriptLogo },

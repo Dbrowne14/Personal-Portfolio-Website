@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import type { Toggle } from "@/types/components";
+import type { Toggle } from "@/types/propTypes";
 
 const NavSmallScreen = ({ toggle }: Toggle) => {
   return (

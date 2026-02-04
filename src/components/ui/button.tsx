@@ -1,4 +1,4 @@
-import type { NameWithLink } from "../../types/components";
+import type { NameWithLink } from "../../types/propTypes";
 
 const button = ({ name, link }: NameWithLink) => {
   return (

@@ -4,13 +4,12 @@ import { projectsData } from "../../data/projectsData";
 
 const projectsCard = () => {
   return projectsData.map((project) => (
-    <div className="flex flex-col rounded-2xl bg-iconBg shadow-[0_6px_15px_2px_var(--color-highlightColor)] overflow-hidden">
-      {/* Top image */}
+    <div className="flex flex-col rounded-2xl dark:bg-iconBg shadow-[0_6px_15px_2px_var(--color-highlightColor)] overflow-hidden">
+
       <div className="h-1/2 w-full">
         <img className="w-full h-full object-cover" src={project.imageLink} />
       </div>
 
-      {/* Bottom content */}
       <div className="flex flex-col flex-1 p-4">
         <h1 className="mb-1 text-variableText font-bold text-highlightColor">
           {project.title}

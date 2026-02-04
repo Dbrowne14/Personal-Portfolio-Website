@@ -1,4 +1,4 @@
-import type { NameWithLink } from "../../types/components";
+import type { NameWithLink } from "../../types/propTypes";
 
 const logoShell = ({ name, link }: NameWithLink) => {
   return (
