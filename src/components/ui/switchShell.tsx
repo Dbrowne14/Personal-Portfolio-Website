@@ -30,7 +30,7 @@ const switchShell = () => {
 
   return (
     <div
-      className={`w-fit h-fit ${scrollThreshold ? "hidden" : "inline-flex"} rounded-full dark:bg-[rgba(83,79,79,0.6)] bg-[rgba(228,217,217,0.54)] flex-row gap-2 justify-center items-center`}
+      className={`w-fit h-fit transition-all duration-500 ease-in-out inline-flex ${scrollThreshold ? "opacity-0 pointer-events-none" : "opacity-100"} rounded-full dark:bg-[rgba(83,79,79,0.6)] bg-[rgba(228,217,217,0.54)] flex-row gap-2 justify-center items-center`}
     >
       <svg
         viewBox="0 0 24 24"

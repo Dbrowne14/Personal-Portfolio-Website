@@ -1,6 +1,7 @@
 import type { NameWithLink } from "../../types/propTypes";
 
 const logoShell = ({ name, link }: NameWithLink) => {
+    console.log("Parent Rendered")
   return (
     <div className="flex flex-col drop-shadow-xl/20 logo-card p-1 dark:bg-iconBg dark:text-iconText  hover:border-4 dark:hover:border-iconBg hover:border-standardBg">
       <div className="h-[75%] flex justify-center items-center">
