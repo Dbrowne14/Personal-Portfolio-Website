@@ -12,26 +12,30 @@ import { logos } from "../../data/logoData";
   { name: "HTML", link: htmlLogo },
 ];*/
 
-const techUsed = () => {
-  return (
-    <div className="flex gap-2 rounded-2xl bg-[rgba(53,42,42,0.74)] px-2 py-1 justify-center items-center">
-      <div className="h-4 w-4 flex justify-center items-center">
-        {" "}
-        <img className="justify-self-center" src={logos[0].link} />
-      </div>
-      <p className="text-variableText">CSS</p>
-    </div>
-  );
+type techUsedProps = {
+  languages: string[];
 };
 
-export default techUsed;
+const techUsed = ({ languages }: techUsedProps) => {
+  return (
+    <>
+      {languages.map((language) => {
+        const logo = logos.find((l) => l.name === language);
+        if (!logo) return null;
 
-//techused takes in an array [css,]
-/* names.forEach( name => {
-logos.forEach( if(name === logos.name) {
-return (
-    <div className="flex gap-2 rounded-2xl bg-[rgba(53,42,42,0.74)] px-2 py-1 justify-center items-center">
-      <div className="h-4 w-4 bg-black"></div>
-      <p className="text-variableText">{logos.name}</p>
-    </div>
-  );}*/
+        return (
+          <div
+            key={logo.name}
+            className="flex gap-2 rounded-2xl bg-[rgba(53,42,42,0.74)] px-2 py-1 justify-center items-center"
+          >
+            <div className="h-4 w-4 flex justify-center items-center">
+              <img src={logo.link} alt={logo.name} />
+            </div>
+            <p className="text-variableText">{logo.name}</p>
+          </div>
+        );
+      })}
+    </>
+  );
+};
+export default techUsed;
