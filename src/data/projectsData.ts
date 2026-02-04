@@ -1,4 +1,5 @@
 import davidWebsite from "../assets/Image 03-02-2026 at 17.35.jpg";
+import spotifyApp from "../assets/spotifyapp.jpg"
 import { AllowedLanguages } from "@/types/dataTypes";
 
 type ProjectsData = {
@@ -26,7 +27,7 @@ export const projectsData: ProjectsData[] = [
   },
   {
     title: "Spotify Playlist Game",
-    imageLink: davidWebsite,
+    imageLink: spotifyApp,
     description:
       "A web app that challengers the user to make a perfect playlist on the basis of preset conditions",
     languages: ["React", "TypeScript", "JavaScript", "Tailwind"],
