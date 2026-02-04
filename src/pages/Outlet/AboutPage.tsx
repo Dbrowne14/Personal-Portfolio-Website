@@ -10,7 +10,7 @@ import { Rotator } from "../../components/ui/rotator";
 
 export default function AboutPage() {
   return (
-    <section className="col-gaps justify center w-full items-center ">
+    <section className="col-gaps justify center w-full h-full items-center ">
       <div className="col-gaps content-width justify center  items-center md:gap-16">
         <div className="col-gaps content-width justify-center md:h-100 items-center md:flex-row md:gap-18 py-4 ">
           <div className="col-gaps gap-4 sm:gap-5 md:gap-8">

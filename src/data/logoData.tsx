@@ -11,9 +11,9 @@ import htmlLogo from "../assets/logos/128px-HTML5_logo_and_wordmark.svg.png";
 import type { NameWithLink } from "../types/components";
 
 export const logos: NameWithLink[] = [
-  { name: "React", link: reactLogo  },
+  { name: "React", link: reactLogo },
   { name: "CSS", link: cssLogo },
-  { name: "JavaScript", link: JavaScriptLogo  },
+  { name: "JavaScript", link: JavaScriptLogo },
   { name: "TypeScript", link: typeScriptLogo },
   { name: "NodeJS", link: nodeLogo },
   { name: "ExpressJS", link: expressLogo },

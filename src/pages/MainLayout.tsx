@@ -14,11 +14,11 @@ const MainLayout = () => {
   }, []);
   return (
     <div className="w-full h-full">
-      <div className="mx-auto h-full grid grid-rows-[minmax(0,1fr)_minmax(0,10fr)_minmax(0,1fr)] place-items-center">
+      <div className="mx-auto min-h-screen grid grid-rows-[minmax(0,1fr)_minmax(0,10fr)_minmax(0,1fr)] place-items-center">
         <nav className="w-full h-full flex justify-center sticky top-0 z-50 items-center ">
           <Nav />
         </nav>
-        <main className="content-width py-6 sm:pt-15 h-full">
+        <main className="content-width pb-6 sm:pt-10 h-full">
           <Outlet />
         </main>
       </div>
