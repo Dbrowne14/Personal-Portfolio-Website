@@ -5,9 +5,6 @@ const Projects = () => {
     <section className="flex flex-col content-width gap-8">
       <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-8 p-2">
         <ProjectsCard />
-        <ProjectsCard />
-        <ProjectsCard />
-        <ProjectsCard />
       </div>
     </section>
   );
