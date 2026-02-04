@@ -7,6 +7,7 @@ import GithubFav from "../../assets/custom_Logos/githubFav";
 import CVFav from "../../assets/custom_Logos/cvFav";
 import { musicTastes } from "../../data/aboutPageData";
 import { Rotator } from "../../components/ui/rotator";
+import EmailFav from "../../assets/custom_Logos/emailFav";
 
 export default function AboutPage() {
   return (
@@ -25,12 +26,13 @@ export default function AboutPage() {
                 className="hidden sm:block p-3 border-r font-bold border-gray-400 text-[14px]
                w-fit"
               >
-                Profile
+                Find Me
               </h1>
               <div className="flex flex-row justify-center items-center gap-6">
                 <LinkedInFav link="https://www.linkedin.com/in/david-browne-544bb1137/" />
                 <GithubFav link="https://github.com/Dbrowne14" />
                 <CVFav link="" />
+                <EmailFav link="mailto:davidbrowne1992@gmail.com" />
               </div>
             </div>
           </div>
@@ -105,7 +107,8 @@ export default function AboutPage() {
                 much every sport — with football and cycling at the top of the
                 list. Long walks are my reset button, and I’m always up for
                 learning something new or experiencing something different.
-                Lately, my soundtrack has been a steady stream of <Rotator array={musicTastes} />
+                Lately, my soundtrack has been a steady stream of{" "}
+                <Rotator array={musicTastes} />
               </p>
             </div>
           </div>
