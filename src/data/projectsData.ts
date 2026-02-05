@@ -1,5 +1,5 @@
 import davidWebsite from "../assets/Image 03-02-2026 at 17.35.jpg";
-import spotifyApp from "../assets/spotifyapp.jpg"
+import spotifyApp from "../assets//portfolio_images/spotifyapp.jpg"
 import { AllowedLanguages } from "@/types/dataTypes";
 import redditAPI from "../assets/portfolio_images/Reddit_Api.png"
 
