@@ -7,7 +7,7 @@ const projectsCard = () => {
     <div className="flex flex-col rounded-2xl dark:bg-[rgba(27,3,49,0.9)] shadow-[0_6px_15px_2px_var(--color-highlightColor)] overflow-hidden">
 
       <div className="h-1/2 w-full">
-        <img className="w-full h-full object-cover" src={project.imageLink} />
+        <img className="w-full h-full object-cover border-b-3 border-highlightColor" src={project.imageLink} />
       </div>
 
       <div className="flex flex-col flex-1 p-4">
