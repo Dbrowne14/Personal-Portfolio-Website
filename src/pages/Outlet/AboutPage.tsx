@@ -81,7 +81,7 @@ export default function AboutPage() {
                 More about me...
               </h1>
             </div>
-            <div className="w-full place-items-center  text-variableText space-y-5 lg:leading-9">
+            <div className="w-full place-items-start  text-variableText space-y-5 lg:leading-9">
               <p>
                 I’m a Full-Stack Developer on a journey of life-long learning,
                 with a passion for JavaScript and all things React. I arrived
@@ -93,13 +93,6 @@ export default function AboutPage() {
                 investing in were actually built.
               </p>
               <p>
-                Coding has become my outlet, a way to combine my love of
-                problem-solving with a hands-on connection to the tech market I
-                had been immersed in for years. I’m driven by a constant quest
-                to learn, explore new tools, and build things that are not just
-                functional, but meaningful.
-              </p>
-              <p>
                 I’m someone who likes keeping both my mind and life in motion. I
                 manage my own investment portfolio and enjoy the strategy behind
                 growing it over time. Outside of that, I’m a big anime fan,
@@ -107,6 +100,8 @@ export default function AboutPage() {
                 much every sport — with football and cycling at the top of the
                 list. Long walks are my reset button, and I’m always up for
                 learning something new or experiencing something different.
+              </p>
+              <p>
                 Lately, my soundtrack has been a steady stream of{" "}
                 <Rotator array={musicTastes} />
               </p>
