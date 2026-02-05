@@ -1,6 +1,7 @@
 import davidWebsite from "../assets/Image 03-02-2026 at 17.35.jpg";
 import spotifyApp from "../assets/spotifyapp.jpg"
 import { AllowedLanguages } from "@/types/dataTypes";
+import redditAPI from "../assets/portfolio_images/Reddit_Api.png"
 
 type ProjectsData = {
   title: string;
@@ -12,7 +13,7 @@ type ProjectsData = {
 export const projectsData: ProjectsData[] = [
   {
     title: "Reddit API Project",
-    imageLink: davidWebsite,
+    imageLink: redditAPI,
     description:
       "A web application that provides a gallery with custom subReddits",
     languages: [
