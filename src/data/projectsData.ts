@@ -15,7 +15,7 @@ export const projectsData: ProjectsData[] = [
     title: "Reddit API Project",
     imageLink: redditAPI,
     description:
-      "A web application that provides a gallery with custom subReddits",
+      "Full-stack web app delivering curated Reddit content via a custom backend laye",
     languages: [
       "React",
       "Redux",
@@ -30,7 +30,7 @@ export const projectsData: ProjectsData[] = [
     title: "Spotify Playlist Game",
     imageLink: spotifyApp,
     description:
-      "A web app that challengers the user to make a perfect playlist on the basis of preset conditions",
+      "Interactive music game leveraging Spotify’s OAuth 2.0 authentication",
     languages: ["React", "TypeScript", "JavaScript", "Tailwind"],
   },
   {
