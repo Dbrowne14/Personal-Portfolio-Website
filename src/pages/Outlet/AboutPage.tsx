@@ -8,6 +8,7 @@ import CVFav from "../../assets/custom_Logos/cvFav";
 import { musicTastes } from "../../data/aboutPageData";
 import { Rotator } from "../../components/ui/rotator";
 import EmailFav from "../../assets/custom_Logos/emailFav";
+import CV from "../../assets/files/CV_David_Mark_Browne_2026.docx.pdf"
 
 export default function AboutPage() {
   return (
@@ -31,7 +32,7 @@ export default function AboutPage() {
               <div className="flex flex-row justify-center items-center gap-6">
                 <LinkedInFav link="https://www.linkedin.com/in/david-browne-544bb1137/" />
                 <GithubFav link="https://github.com/Dbrowne14" />
-                <CVFav link="" />
+                <CVFav link={CV} />
                 <EmailFav link="mailto:davidbrowne1992@gmail.com" />
               </div>
             </div>
