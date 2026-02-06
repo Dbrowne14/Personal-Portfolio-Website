@@ -11,7 +11,7 @@ const bulletList = ({ content, link }: Bullet) => {
         {" "}
         {link}
       </div>
-      <p className=" px-2 lg:px-8 drop-shadow-xl/20 h-full w-full flex justify-start items-center bg-lightBg sm:bg-transparent dark:bg-[rgba(27,3,49,0.9)] rounded-2xl">
+      <p className=" transform ease-in duration 300 px-2 lg:px-8 drop-shadow-xl/20 h-full w-full flex justify-start items-center bg-lightBg sm:bg-transparent dark:bg-[rgba(27,3,49,0.9)] rounded-2xl">
         {content}
       </p>
     </li>
