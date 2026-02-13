@@ -1,6 +1,6 @@
 # Personal Portfolio Website
 
-A responsive and modern personal portfolio website built with **TypeScript**, **JavaScript**, and **CSS**, showcasing projects, skills, and contact information.
+A responsive and modern personal portfolio website built with **TypeScript**, **JavaScript**, and **Tailwind CSS**, showcasing projects, skills, and contact information.
 
 ---
 
@@ -8,13 +8,12 @@ A responsive and modern personal portfolio website built with **TypeScript**, **
 
 - **TypeScript** for type safety and maintainable code.  
 - **Vanilla JavaScript** for interactive features and animations.  
-- **CSS** for styling and responsive layouts.  
+- **Tailwind CSS** for styling and responsive layouts.  
 - Fully responsive and mobile-friendly.  
 - Sections include:
   - Home / Introduction
-  - About Me
+  - About Me /  Skills
   - Projects / Portfolio
-  - Skills
   - Contact Form
 - Smooth scrolling and navigation.  
 
@@ -22,6 +21,6 @@ A responsive and modern personal portfolio website built with **TypeScript**, **
 
 ## 💻 Technologies Used
 
-- **Frontend:** HTML, CSS, JavaScript, TypeScript  
-- **Routing:** Optional React Router or SPA routing (if using React)  
+- **Frontend:** HTML, Tailwind CSS, JavaScript, TypeScript  
+- **Routing:** Optional React Router or SPA routing  
 - **Build Tools:** Vite / Webpack / Parcel (depending on setup)
