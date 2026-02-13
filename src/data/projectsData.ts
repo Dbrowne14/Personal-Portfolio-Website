@@ -9,13 +9,14 @@ type ProjectsData = {
   description: string;
   languages: AllowedLanguages[];
 };
+//add a link for clicking
 
 export const projectsData: ProjectsData[] = [
   {
-    title: "Reddit API Project",
+    title: "RedCanvas",
     imageLink: redditAPI,
     description:
-      "Full-stack web app delivering curated Reddit content via a custom backend laye",
+      "Full-stack web app delivering curated Reddit content via a custom backend layer",
     languages: [
       "React",
       "Redux",
