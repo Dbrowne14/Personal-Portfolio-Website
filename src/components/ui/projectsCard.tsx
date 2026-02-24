@@ -4,7 +4,7 @@ import { projectsData } from "../../data/projectsData";
 
 const projectsCard = () => {
   return projectsData.map((project) => (
-    <a href={project.externalLink} key={project.title} target="_blank" className="block">
+    <a href={project.externalLink} key={project.title} target="_blank" className="block h-full">
       <div
         className="flex flex-col rounded-2xl dark:bg-[rgba(27,3,49,0.9)] shadow-[0_6px_15px_2px_var(--color-highlightColor)] overflow-hidden transform-[perspective(1000px)_rotateX(0deg)_rotateY(0deg)_scale3d(1,1,1)]
       transition-transform duration-300 ease-out
