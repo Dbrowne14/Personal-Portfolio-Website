@@ -14,6 +14,14 @@ type ProjectsData = {
 
 export const projectsData: ProjectsData[] = [
   {
+    title: "Spotify Playlist Game",
+    imageLink: spotifyApp,
+    description:
+      "Interactive music game leveraging Spotify’s OAuth 2.0 authentication",
+    languages: ["React", "TypeScript", "JavaScript", "Tailwind"],
+    externalLink: "https://davejams.netlify.app/",
+  },
+  {
     title: "RedCanvas",
     imageLink: redditAPI,
     description:
@@ -27,18 +35,17 @@ export const projectsData: ProjectsData[] = [
       "ExpressJS",
       "Tailwind",
     ],
-    externalLink: "https://redcanvas.netlify.app/"
+    externalLink: "https://redcanvas.netlify.app/",
+  },
+      {title: "Big Boss Machine",
+    imageLink: davidWebsite,
+    description: "A machine for big bosses ",
+    languages: ["ExpressJS", "NodeJS"],
+    externalLink:
+      "https://github.com/Dbrowne14/Boss-Machine-Codecademy-Project",
   },
   {
-    title: "Spotify Playlist Game",
-    imageLink: spotifyApp,
-    description:
-      "Interactive music game leveraging Spotify’s OAuth 2.0 authentication",
-    languages: ["React", "TypeScript", "JavaScript", "Tailwind"],
-    externalLink: "https://davejams.netlify.app/",
-  },
-  {
-    title: "Custom Game Tracker for MTG",
+    title: "Custom Game Tracker for MTG [Coming Soon!]",
     imageLink: davidWebsite,
     description:
       "A tracker for the popular trading card game Magic the Gathering for it's Chaos Draft format",
@@ -50,13 +57,6 @@ export const projectsData: ProjectsData[] = [
     imageLink: davidWebsite,
     description: "A calendar scheduler for memos and required inputs",
     languages: ["React", "JavaScript", "CSS", "HTML"],
-    externalLink: "",
-  },
-  {
-    title: "Big Boss Machine",
-    imageLink: davidWebsite,
-    description: "A machine for big bosses ",
-    languages: ["ExpressJS", "NodeJS"],
     externalLink: "",
   },
 ];
