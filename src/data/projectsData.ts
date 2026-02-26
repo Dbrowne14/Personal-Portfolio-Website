@@ -2,6 +2,7 @@ import davidWebsite from "../assets/Image 03-02-2026 at 17.35.jpg";
 import spotifyApp from "../assets//portfolio_images/spotifyapp.jpeg";
 import { AllowedLanguages } from "@/types/dataTypes";
 import redditAPI from "../assets/portfolio_images/Reddit_Api.jpeg";
+import peImage from "../assets/portfolio_images/PE_website_blurred.png"
 
 type ProjectsData = {
   title: string;
@@ -53,10 +54,10 @@ export const projectsData: ProjectsData[] = [
     externalLink: "",
   },
   {
-    title: "Calendar Scheduler",
-    imageLink: davidWebsite,
-    description: "A calendar scheduler for memos and required inputs",
-    languages: ["React", "JavaScript", "CSS", "HTML"],
+    title: "Website for Private Equity firm",
+    imageLink: peImage,
+    description: "Consulted on website design for a new European PE firm",
+    languages: ["CSS", "HTML"],
     externalLink: "",
   },
 ];
