@@ -5,6 +5,7 @@ export type AllowedLanguages =
   | "TypeScript"
   | "NodeJS"
   | "ExpressJS"
+  | "PostgreSQL"
   | "Redux"
   | "Tailwind"
   | "Git"

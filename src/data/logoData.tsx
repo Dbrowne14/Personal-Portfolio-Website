@@ -8,6 +8,7 @@ import reduxLogo from "../assets/logos/redux-logo-svgrepo-com.svg";
 import tailwindLogo from "../assets/logos/128px-Tailwind_CSS_Logo.svg.png";
 import gitLogo from "../assets/logos/git-icon-logo-svgrepo-com.svg";
 import htmlLogo from "../assets/logos/128px-HTML5_logo_and_wordmark.svg.png";
+import postGresLogo from "../assets/logos/postgresql-logo-svgrepo-com.svg";
 import type { LinkProp } from "../types/propTypes";
 import type { AllowedLanguages } from "@/types/dataTypes";
 
@@ -22,6 +23,7 @@ export const logos: LogoList[] = [
   { name: "TypeScript", link: typeScriptLogo },
   { name: "NodeJS", link: nodeLogo },
   { name: "ExpressJS", link: expressLogo },
+  { name: "PostgreSQL", link: postGresLogo },
   { name: "Redux", link: reduxLogo },
   { name: "Tailwind", link: tailwindLogo },
   { name: "Git", link: gitLogo },
