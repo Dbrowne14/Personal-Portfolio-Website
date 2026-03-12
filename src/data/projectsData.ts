@@ -20,7 +20,7 @@ export const projectsData: ProjectsData[] = [
     description:
       "A wordle style game for magic the gathering TCG",
     languages: ["React", "TypeScript", "JavaScript", "NodeJS", "PostgreSQL", "CSS", "HTML"],
-    externalLink: "",
+    externalLink: "https://github.com/Dbrowne14/Magicle",
   },
   {
     title: "Spotify Playlist Game",
