@@ -14,6 +14,14 @@ type ProjectsData = {
 //add a link for clicking
 
 export const projectsData: ProjectsData[] = [
+    {
+    title: "Staple [Coming Soon!]",
+    imageLink: davidWebsite,
+    description:
+      "A wordle style game for magic the gathering TCG",
+    languages: ["React", "TypeScript", "JavaScript", "NodeJS", "PostgreSQL", "CSS", "HTML"],
+    externalLink: "",
+  },
   {
     title: "Spotify Playlist Game",
     imageLink: spotifyApp,
@@ -44,14 +52,6 @@ export const projectsData: ProjectsData[] = [
     languages: ["ExpressJS", "NodeJS"],
     externalLink:
       "https://github.com/Dbrowne14/Boss-Machine-Codecademy-Project",
-  },
-  {
-    title: "Custom Game Tracker for MTG [Coming Soon!]",
-    imageLink: davidWebsite,
-    description:
-      "A tracker for the popular trading card game Magic the Gathering for it's Chaos Draft format",
-    languages: ["React", "TypeScript", "JavaScript", "CSS", "HTML"],
-    externalLink: "",
   },
   {
     title: "Website for Private Equity firm",
