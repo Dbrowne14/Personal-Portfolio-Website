@@ -8,7 +8,7 @@ import CVFav from "../../assets/custom_Logos/cvFav";
 import { musicTastes } from "../../data/aboutPageData";
 import { Rotator } from "../../components/ui/rotator";
 import EmailFav from "../../assets/custom_Logos/emailFav";
-import CV from "../../assets/files/CV David Mark Browne 2026.docx.pdf"
+import CV from "../../assets/files/CV David Mark Browne v042026.docx.pdf"
 
 export default function AboutPage() {
   return (
