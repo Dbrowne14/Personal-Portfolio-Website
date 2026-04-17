@@ -3,6 +3,7 @@ import spotifyApp from "../assets//portfolio_images/spotifyapp.jpeg";
 import { AllowedLanguages } from "@/types/dataTypes";
 import redditAPI from "../assets/portfolio_images/Reddit_Api.jpeg";
 import peImage from "../assets/portfolio_images/PE_website_blurred.png"
+import staple from "../assets/portfolio_images/Staple.png"
 
 type ProjectsData = {
   title: string;
@@ -15,15 +16,15 @@ type ProjectsData = {
 
 export const projectsData: ProjectsData[] = [
     {
-    title: "Staple [Coming Soon!]",
-    imageLink: davidWebsite,
+    title: "Staple ",
+    imageLink: staple,
     description:
-      "A wordle style game for magic the gathering TCG",
-    languages: ["React", "TypeScript", "JavaScript", "NodeJS", "PostgreSQL", "CSS", "HTML"],
-    externalLink: "https://github.com/Dbrowne14/Magicle",
+      "MTG Wordle-style PERN stack game, featuring daily challenges powered by PostgreSQL and cron automation",
+    languages: ["React","NodeJS", "TypeScript", "JavaScript", "PostgreSQL", "ExpressJS", "Tailwind"],
+    externalLink: "https://stapleedh.netlify.app/",
   },
   {
-    title: "Spotify Playlist Game",
+    title: "Ten Songs",
     imageLink: spotifyApp,
     description:
       "Interactive music game leveraging Spotify’s OAuth 2.0 authentication",
