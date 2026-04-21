@@ -21,7 +21,7 @@ export const projectsData: ProjectsData[] = [
     description:
       "MTG Wordle-style PERN stack game, featuring daily challenges powered by PostgreSQL and cron automation",
     languages: ["React","NodeJS", "TypeScript", "JavaScript", "PostgreSQL", "ExpressJS", "Tailwind"],
-    externalLink: "https://stapleedh.netlify.app/",
+    externalLink: "https://playstaple.app/",
   },
   {
     title: "Ten Songs",
