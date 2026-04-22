@@ -43,6 +43,7 @@ export const projectsData: ProjectsData[] = [
       "JavaScript",
       "NodeJS",
       "ExpressJS",
+      "PostgreSQL",
       "Tailwind",
     ],
     externalLink: "https://redcanvas.netlify.app/",
