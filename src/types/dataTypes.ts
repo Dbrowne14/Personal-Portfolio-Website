@@ -9,4 +9,5 @@ export type AllowedLanguages =
   | "Redux"
   | "Tailwind"
   | "Git"
+  | "React-Router"
   | "HTML";
