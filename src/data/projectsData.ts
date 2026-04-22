@@ -40,7 +40,6 @@ export const projectsData: ProjectsData[] = [
       "React",
       "Redux",
       "TypeScript",
-      "JavaScript",
       "NodeJS",
       "ExpressJS",
       "PostgreSQL",
