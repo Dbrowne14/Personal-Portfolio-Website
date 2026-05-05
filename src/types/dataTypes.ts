@@ -10,4 +10,5 @@ export type AllowedLanguages =
   | "Tailwind"
   | "Git"
   | "React-Router"
+  | "NextJS"
   | "HTML";
